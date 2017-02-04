@@ -40,6 +40,30 @@
         });
         */
 
+        $routeProvider.when('/caja/cobros', {
+            templateUrl: 'cobros/cobros.html',
+            controller: 'CobrosCtrl',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('cobros/cobros.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/caja/detalle_caja', {
+            templateUrl: 'detalle_caja/detalle_caja.html',
+            controller: 'DetalleCajaCtrl',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('detalle_caja/detalle_caja.js');
+                }]
+            }
+        });
+
         $routeProvider.when('/settings/clientes', {
             templateUrl: 'clientes/clientes.html',
             controller: 'ClienteCtrl',

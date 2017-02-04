@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MV-Controles</title>
+    <title>Mesero Virtual</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -531,7 +531,7 @@
                        ng-click="appCtrl.menu = 'platos'">
                         <img src="images/logo1.svg" class="menu-icon">
                     </a>
-                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Caja"
+                    <a class="menu-desktop-btn ac-ripple" href="#!/caja/cobros" title="Caja"
                        ng-click="appCtrl.menu = 'caja'">
                         <img src="images/logo2.svg" class="menu-icon">
                     </a>
@@ -559,6 +559,20 @@
             </div>
         </div>
         <div id="menu-desktop-right">
+            <div ng-if="appCtrl.menu =='caja'" class="sub-menu">
+                <a href="#!/caja/cobros" ng-click="appCtrl.sub_menu = 'cobros'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'cobros'}">Cobros</a>
+                <a href="#!/caja/abrir_cerrar_caja" ng-click="appCtrl.sub_menu = 'abrir_cerrar_caja'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'abrir_cerrar_caja'}">Abrir/Cerrar Caja</a>
+                <a href="#!/caja/gastos" ng-click="appCtrl.sub_menu = 'gastos'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'gastos'}">Gastos</a>
+                <a href="#!/caja/depositos" ng-click="appCtrl.sub_menu = 'depositos'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'depositos'}">Depositos</a>
+                <a href="#!/caja/movimientos" ng-click="appCtrl.sub_menu = 'movimientos'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'movimientos'}">Movimientos</a>
+                <a href="#!/caja/detalle_caja" ng-click="appCtrl.sub_menu = 'detalle_caja'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'detalle_caja'}">Detalle de Caja</a>
+            </div>
             <div ng-if="appCtrl.menu =='settings'" class="sub-menu">
                 <a href="#!/settings/clientes" ng-click="appCtrl.sub_menu = 'clientes'"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'clientes'}">Clientes</a>
