@@ -1,68 +1,319 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mi Primer Sponsor</title>
-    <meta name="description" content="">
+    <title>MV-Controles</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <script src="https://use.fontawesome.com/40f7b7bc87.js"></script>
-    <link rel="manifest" href="images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <style>
+    <link rel="stylesheet" href="app.css">
 
-        /*ESTILOS DEL LOADER*/
+    <style>
+        .loader-img {
+            height:150px;
+        }
+        @media (min-width: 800px) {
+            .loader-img {
+                height:250px;
+            }
+        }
+        #ac-loader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            font-family: Verdana, sans-serif;
+            background-color: white;
+        }
+
+        /* line 22, ../sass/screen.scss */
+        #ac-loader #loader-loading {
+            margin-bottom: 40px;
+            -webkit-animation: loader-loading-anim 3s ease-in-out infinite;
+            -o-animation: loader-loading-anim 3s ease-in-out infinite;
+            animation: loader-loading-anim 3s ease-in-out infinite;
+        }
+
+        /* line 31, ../sass/screen.scss */
+        #ac-loader #border-rad {
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            overflow: hidden;
+            height: 54px;
+            width: 304px;
+            -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+            -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+            -webkit-animation: loader-shadow-anim 5s ease-in-out infinite;
+            -o-animation: loader-shadow-anim 5s ease-in-out infinite;
+            animation: loader-shadow-anim 5s ease-in-out infinite;
+            border: 4px solid #133648;
+            background-color: #133648;
+            position: relative;
+        }
+
+        /* line 49, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container {
+            background-color: gray;
+            height: 50px;
+            width: 300px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            border: 2px solid beige;
+        }
+
+        /* line 63, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #bubble {
+            position: absolute;
+            top: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            width: 10px;
+            right: 15px;
+            height: 10px;
+        }
+
+        /* line 75, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #reflex {
+            position: absolute;
+            top: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            width: 250px;
+            left: 20px;
+            height: 10px;
+        }
+
+        /* line 87, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-zero {
+            -webkit-transform: translateX(0px) !important;
+            -moz-transform: translateX(0px) !important;
+            -ms-transform: translateX(0px) !important;
+            -o-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+            -webkit-animation: move-loader-zero 10s linear infinite !important;
+            -o-animation: move-loader-zero 10s linear infinite !important;
+            animation: move-loader-zero 10s linear infinite !important;
+        }
+
+        /* line 99, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-zero,
+        #ac-loader #border-rad #loader-container #loader-first,
+        #ac-loader #border-rad #loader-container #loader-second,
+        #ac-loader #border-rad #loader-container #loader-third,
+        #ac-loader #border-rad #loader-container #loader-fourth,
+        #ac-loader #border-rad #loader-container #loader-fifth,
+        #ac-loader #border-rad #loader-container #loader-sixth {
+            position: absolute;
+            height: 100px;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            top: 0;
+            -webkit-transform: translateX(-200px);
+            -moz-transform: translateX(-200px);
+            -ms-transform: translateX(-200px);
+            -o-transform: translateX(-200px);
+            transform: translateX(-200px);
+            -webkit-animation: move-loader 10s linear infinite;
+            -o-animation: move-loader 10s linear infinite;
+            animation: move-loader 10s linear infinite;
+        }
+
+        /* line 123, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-zero div,
+        #ac-loader #border-rad #loader-container #loader-first div,
+        #ac-loader #border-rad #loader-container #loader-second div,
+        #ac-loader #border-rad #loader-container #loader-third div,
+        #ac-loader #border-rad #loader-container #loader-fourth div,
+        #ac-loader #border-rad #loader-container #loader-fifth div,
+        #ac-loader #border-rad #loader-container #loader-sixth div {
+            width: 50px;
+            height: 100%;
+        }
+
+        /* line 129, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-second {
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            -ms-animation-delay: 2s;
+            -o-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+
+        /* line 137, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-third {
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -ms-animation-delay: 4s;
+            -o-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+
+        /* line 145, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-fourth {
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -ms-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+
+        /* line 153, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-fifth {
+            -webkit-animation-delay: 8s;
+            -moz-animation-delay: 8s;
+            -ms-animation-delay: 8s;
+            -o-animation-delay: 8s;
+            animation-delay: 8s;
+        }
+
+        /* line 161, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container #loader-sixth {
+            -webkit-animation-delay: 10s;
+            -moz-animation-delay: 10s;
+            -ms-animation-delay: 10s;
+            -o-animation-delay: 10s;
+            animation-delay: 10s;
+        }
+
+        /* line 169, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container .rojo {
+            background-color: #A1CCA5;
+        }
+
+        /* line 173, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container .azul {
+            background-color: #FBE083;
+        }
+
+        /* line 177, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container .amarillo {
+            background-color: #CE5F2D;
+        }
+
+        /* line 181, ../sass/screen.scss */
+        #ac-loader #border-rad #loader-container .naranja {
+            background-color: #50232E;
+        }
+
+        @-webkit-keyframes move-loader {
+            0% {
+                -webkit-transform: translateX(-200);
+                -moz-transform: translateX(-200);
+                -ms-transform: translateX(-200);
+                -o-transform: translateX(-200);
+                transform: translateX(-200);
+            }
+            50% {
+                -webkit-transform: translateX(300px);
+                -moz-transform: translateX(300px);
+                -ms-transform: translateX(300px);
+                -o-transform: translateX(300px);
+                transform: translateX(300px);
+                opacity: 1;
+            }
+            51% {
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateX(-200px);
+                -moz-transform: translateX(-200px);
+                -ms-transform: translateX(-200px);
+                -o-transform: translateX(-200px);
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes move-loader-zero {
+            0% {
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+            }
+            50% {
+                -webkit-transform: translateX(500px);
+                -moz-transform: translateX(500px);
+                -ms-transform: translateX(500px);
+                -o-transform: translateX(500px);
+                transform: translateX(500px);
+                opacity: 1;
+            }
+            51% {
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateX(0px);
+                -moz-transform: translateX(0px);
+                -ms-transform: translateX(0px);
+                -o-transform: translateX(0px);
+                transform: translateX(0px);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes loader-loading-anim {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes loader-shadow-anim {
+            0% {
+                -moz-box-shadow: 0px 0px 40px 5px transparent;
+                -webkit-box-shadow: 0px 0px 40px 5px transparent;
+                box-shadow: 0px 0px 40px 5px transparent;
+            }
+            50% {
+                -moz-box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+                -webkit-box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+                box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.8);
+            }
+            100% {
+                -moz-box-shadow: 0px 0px 40px 5px transparent;
+                -webkit-box-shadow: 0px 0px 40px 5px transparent;
+                box-shadow: 0px 0px 40px 5px transparent;
+            }
+        }
 
     </style>
-
-    <script type="text/javascript">
-        (function () {
-            console.log('main');
-            function
-            $MPC_load() {
-                console.log('load');
-                window.$MPC_loaded !== true && (function () {
-                    var s = document.createElement("script");
-                    s.type = "text/javascript";
-                    s.async = true;
-//                    s.src = "render.js";
-                    s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                    window.$MPC_loaded = true;
-                })();
-                console.log(window.$MPC_loaded);
-            }
-
-
-            window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-
-        })();
-    </script>
 
     <script>
 
         // Cargo las configuraciones para la app
-        window.appName = 'miprimersponsor';
+        window.appName = 'mesero';
         window.installPath = 'bower_components';
         window.mailAdmin = 'arielcessario@gmail.com';
-        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail:'diegoyankelevich@gmail.com'}];
-//        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail:'diegoyankelevich@gmail.com'}, {mail: 'info@misponsor.com'}];
+        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
 
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
@@ -73,7 +324,6 @@
          */
 
         //# sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map
-
         //@@NG_LOADER_END@@
 
         // include a third-party async loader library
@@ -152,22 +402,32 @@
                     $script([
                         'bower_components/angular-route/angular-route.min.js',
                         'bower_components/oclazyload/dist/ocLazyLoad.min.js',
-                        'bower_components/angular-cookies/angular-cookies.min.js',
-                        'bower_components/angular-animate/angular-animate.min.js',
-                        'bower_components/a0-angular-storage/dist/angular-storage.min.js',
+                        //'bower_components/angular-cookies/angular-cookies.min.js',
+                        //'bower_components/angular-animate/angular-animate.min.js',
                         '//cdn.auth0.com/js/lock-7.9.min.js',
                         '//cdn.auth0.com/w2/auth0-angular-4.min.js',
                         'bower_components/angular-jwt/dist/angular-jwt.min.js',
-                        'bower_components/angular-scroll/angular-scroll.min.js'
+                        'bower_components/mv-angular-utils/ac-utils.js',
+                        'bower_components/mv-angular-autocomplete/ac-autocomplete.js',
+                        'bower_components/mv-angular-usuarios/ac-usuarios.js',
+                        'bower_components/mv-angular-usuarios/ac-usuarios-administracion.js',
+                        'bower_components/mv-angular-usuarios/ac-clientes-administracion.js',
+                        'bower_components/mv-angular-usuarios/ac-proveedores-administracion.js',
+                        'bower_components/mv-angular-sucursales/ac-sucursales.js',
+                        'bower_components/mv-angular-sucursales/ac-sucursales-administracion.js',
+                        'bower_components/mv-angular-uploads/ac-uploads.js',
+                        'bower_components/mv-angular-productos/ac-productos.js',
+                        'bower_components/mv-angular-productos/ac-productos-administracion.js',
+                        'bower_components/mv-angular-productos/ac-categorias-administracion.js',
+                        'bower_components/mv-angular-productos/ac-productotipo-administracion.js',
+                        'includes/LangTables.js',
                     ], 'segundo');
-
 
                     $script.ready('segundo', function () {
                         $script(['app.js'], 'tercero');
 
                         $script.ready('tercero', function () {
                             angular.bootstrap(document, ['mesero']);
-
                         });
                     });
                 }
@@ -175,14 +435,11 @@
 
     </script>
 
-    <title>Mi Primer Sponsor</title>
-
-    <!--<link rel="stylesheet" href="stylesheets/screen.css">-->
     <script>
         var cb = function () {
             var l = document.createElement('link');
             l.rel = 'stylesheet';
-            l.href = 'stylesheets/screen.css';
+            l.href = 'stylesheets/styles.css';
             var h = document.getElementsByTagName('head')[0];
             h.parentNode.insertBefore(l, h);
         };
@@ -191,11 +448,12 @@
         if (raf) raf(cb);
         else window.addEventListener('load', cb);
     </script>
+
 </head>
-<body ng-controller="AppController as appCtrl">
+<body ng-controller="AppCtrl as appCtrl">
 <div ng-if="!appCtrl.hideLoader" id="ac-loader">
-    <img src="images/logo-loader.png" alt="" height="250px">
-    <span id="loader-loading">Aguarde...</span>
+    <img src="images/logo_loader.png" alt="" class="loader-img" >
+    <span id="loader-loading" style="margin-top: 20px">Loading...</span>
     <div id="border-rad">
         <div id="loader-container">
             <div id="loader-zero">
@@ -250,20 +508,115 @@
     </div>
 </div>
 
-<div class="nav" ng-include="'header/header.html'"></div>
+<div class="login">
 
+</div>
+<div class="header" ng-class="{'display-header': !appCtrl.display_header, 'header-as-main': appCtrl.selectedPage == 'INICIO'}">
+    <div class="menu-mobile menu-type-mobile">
+        <div class="nav-button"
+             ng-click="appCtrl.menu_mobile_open = !appCtrl.menu_mobile_open;"
+             ng-class="{'nav-button-transformed':appCtrl.menu_mobile_open}">
+            <div ng-class="{'nav-button-top-transformed':appCtrl.menu_mobile_open}"></div>
+            <div ng-class="{'nav-button-mid-transformed':appCtrl.menu_mobile_open}"></div>
+            <div ng-class="{'nav-button-bot-transformed':appCtrl.menu_mobile_open}"></div>
+        </div>
+    </div>
 
-<div ng-view autoscroll="true"></div>
+    <div class="menu-desktop menu-type-desktop" ng-class="{'display-menu-desktop':appCtrl.display_menu != true }">
+        <div id="menu-desktop-left">
+            <!--<div id="menu-desktop-upper"></div>-->
+            <div id="menu-desktop-lower">
+                <div id="menu-desktop-lower-inner">
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Platos"
+                       ng-click="appCtrl.menu = 'platos'">
+                        <img src="images/logo1.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Caja"
+                       ng-click="appCtrl.menu = 'caja'">
+                        <img src="images/logo2.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Reportes"
+                       ng-click="appCtrl.menu = 'reportes'">
+                        <img src="images/logo3.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Carrito"
+                       ng-click="appCtrl.menu = 'carrito'">
+                        <img src="images/logo4.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/settings/controles" title="Configuración"
+                       ng-click="appCtrl.menu = 'settings'">
+                        <img src="images/logo5.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Pago"
+                       ng-click="appCtrl.menu = 'pago'">
+                        <img src="images/logo6.svg" class="menu-icon">
+                    </a>
+                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Cocina"
+                       ng-click="appCtrl.menu = 'cocina'">
+                        <img src="images/logo7.svg" class="menu-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-desktop-right">
+            <div ng-if="appCtrl.menu =='settings'" class="sub-menu">
+                <a href="#!/settings/clientes" ng-click="appCtrl.sub_menu = 'clientes'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'clientes'}">Clientes</a>
+                <a href="#!/settings/proveedores" ng-click="appCtrl.sub_menu = 'proveedores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'proveedores'}">Proveedores</a>
+                <a href="#!/settings/usuarios" ng-click="appCtrl.sub_menu = 'usuarios'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'usuarios'}">Usuarios</a>
+                <a href="#!/settings/productostipo" ng-click="appCtrl.sub_menu = 'productostipo'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productostipo'}">Tipos de Productos</a>
+                <a href="#!/settings/productos" ng-click="appCtrl.sub_menu = 'productos'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productos'}">Productos</a>
+                <a href="#!/settings/sucursales" ng-click="appCtrl.sub_menu = 'sucursales'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'sucursales'}">Sucursales</a>
+                <a href="#!/settings/categorias" ng-click="appCtrl.sub_menu = 'categorias'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="menu-mobile-panel" ng-class="{'menu-mobile-panel-show':appCtrl.menu_mobile_open}">
+    <div class="menu-desktop-btn ac-ripple" >Platos</div>
+    <img src="images/logo1.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
+    <div class="menu-desktop-btn ac-ripple" >Caja</div>
+    <img src="images/logo2.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
+    <div class="menu-desktop-btn ac-ripple" >Reportes</div>
+    <img src="images/logo4.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
+    <div class="menu-desktop-btn ac-ripple" >Carrito</div>
+    <img src="images/logo3.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
 
-<!-- <div id="footer">
+    <div ng-click="appCtrl.sub_menu_mobile_open=!appCtrl.sub_menu_mobile_open;appCtrl.sub_menu='settings'" class="menu-desktop-btn ac-ripple" >
+        Configuración
+        <div ng-if="appCtrl.sub_menu_mobile_open==true && appCtrl.sub_menu =='settings'" class="sub-menu-mobile">
+            <a href="#!/settings/controles" ng-click="appCtrl.sub_menu = 'controles';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'controles'}">Controles</a>
+            <a href="#!/settings/clientes" ng-click="appCtrl.sub_menu = 'clientes';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'clientes'}">Clientes</a>
+            <a href="#!/settings/proveedores" ng-click="appCtrl.sub_menu = 'proveedores';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'proveedores'}">Proveedores</a>
+            <a href="#!/settings/usuarios" ng-click="appCtrl.sub_menu = 'usuarios';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'usuarios'}">Usuarios</a>
+            <a href="#!/settings/productos" ng-click="appCtrl.sub_menu = 'productos';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productos'}">Productos</a>
+            <a href="#!/settings/sucursales" ng-click="appCtrl.sub_menu = 'sucursales';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'sucursales'}">Sucursales</a>
+            <a href="#!/settings/categorias" ng-click="appCtrl.sub_menu = 'categorias';appCtrl.menu_mobile_open=false;"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
+        </div>
+    </div>
+    <img src="images/logo5.svg" class="menu-icon-mobile">
+    <div class="menu-desktop-btn ac-ripple" >Pago</div>
+    <img src="images/logo6.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
+    <div class="menu-desktop-btn ac-ripple" >Cocina</div>
+    <img src="images/logo7.svg" class="menu-icon-mobile" ng-click="appCtrl.menu_mobile_open=false;appCtrl.goToPagina('working');">
 
+</div>
 
-     <h2><a class="link" href="#/conozcanos">Conozcanos</a></h2>
-    <h2><a class="link" href="#/administracion">Administracion</a></h2>
-    <h2><a class="link" href="https://www.facebook.com/miprimersponsor/?fref=ts">Visitanos en facebook</a></h2>
-</div>-->
-<div style="font-size: 18px;" class="acdesarrollos">Powered by <A
-        style="color: white; text-decoration: none;" HREF="http://www.ac-desarrollos.com"> AC-Desarrollos</A></div>
+<div ng-view class="view-container"></div>
+
 </body>
 </html>
