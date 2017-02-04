@@ -658,29 +658,38 @@ $divider: sqrt($cells);
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-
+}
+.btn-agregar, .btn-cancelar, .btn-ok, .btn-eliminar, .btn-calendario {
+  position: relative;
+  color:#fff;
+  font-size: 14px;
+  height: 37px;
+  width: 100px;
+  flex: 0 0 37px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-.boton-cancelar{
+.boton-cancelar, .btn-cancelar{
   background-color:#ED7161!important;
-
 }
-
-.boton-agregar{
+.boton-agregar, .btn-agregar{
   background-color: #293333;
-
 }
-
-.boton-ok{
+.boton-ok, .btn-ok{
   background-color: #00CE5D;
-
 }
-
-.boton-eliminar{
+.boton-eliminar, .btn-eliminar{
   background-color: sandybrown;
-
 }
-.boton-calendario{
+.boton-calendario, .btn-calendario{
   background-color: #447EAF;
 }
 
@@ -688,7 +697,8 @@ $divider: sqrt($cells);
   color: white;
 }
 
-.boton-agregar:hover, .boton-cancelar:hover, .boton-ok:hover, .boton-eliminar:hover, .boton-calendario:hover {
+.boton-agregar:hover, .boton-cancelar:hover, .boton-ok:hover, .boton-eliminar:hover, .boton-calendario:hover,
+.btn-agregar:hover, .btn-cancelar:hover, .btn-ok:hover, .btn-eliminar:hover, .btn-calendario:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer!important;
   background-color: #79996D!important;
@@ -699,7 +709,6 @@ $divider: sqrt($cells);
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-
 }
 
 .mv-col{
@@ -746,6 +755,17 @@ $divider: sqrt($cells);
 .container{
   //width: 700px;
   width: 60%;
+  margin: 0 auto;
+}
+.container-small {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container-small-2{
+  width: 50%;
   margin: 0 auto;
 }
 .primary{
@@ -1936,3 +1956,8 @@ ul.enlarge img, ul.enlarge span{
 .buscador-container{
   width: calc(100% - 40px);
 }
+
+.margin-top {
+  margin-top: 10px;
+}
+
