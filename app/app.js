@@ -24,8 +24,9 @@
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
 
-        $routeProvider.otherwise({redirectTo: '/controles'});
+        $routeProvider.otherwise({redirectTo: '/'});
 
+        /*
         $routeProvider.when('/settings/controles', {
             templateUrl: 'controles/controles.html',
             controller: 'ControlesCtrl',
@@ -37,6 +38,7 @@
                 }]
             }
         });
+        */
 
         $routeProvider.when('/settings/clientes', {
             templateUrl: 'clientes/clientes.html',
