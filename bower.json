@@ -17,6 +17,13 @@
     "a0-angular-storage": "^0.0.15",
     "angular-jwt": "^0.1.9",
     "angular-scroll": "^1.0.0",
-    "mv-angular-cajas": "*"
+    "mv-angular-cajas": "*",
+    "mv-angular-autocomplete": "*",
+    "mv-angular-utils": "*",
+    "mv-angular-usuarios": "*",
+    "mv-angular-movimientos": "*",
+    "mv-angular-productos": "*",
+    "mv-angular-stocks": "*",
+    "mv-angular-contacts": "*"
   }
 }
