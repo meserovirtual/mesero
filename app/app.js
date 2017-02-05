@@ -75,6 +75,42 @@
             }
         });
 
+        $routeProvider.when('/caja/gastos', {
+            templateUrl: 'gastos/gastos.html',
+            controller: 'GastosCtrl',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('gastos/gastos.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/caja/depositos', {
+            templateUrl: 'depositos/depositos.html',
+            controller: 'DepositosCtrl',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('depositos/depositos.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/caja/movimientos', {
+            templateUrl: 'movimientos/movimientos.html',
+            controller: 'MovimientoCtrl',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('movimientos/movimientos.js');
+                }]
+            }
+        });
+
         $routeProvider.when('/caja/detalle_caja', {
             templateUrl: 'detalle_caja/detalle_caja.html',
             controller: 'DetalleCajaCtrl',

@@ -141,8 +141,8 @@ class Main
             'getSaldoInicial' => 1,
             'getCajaDiaria' => 1,
             'checkEstado' => -1,
-            'cerrarCaja' => 1,
-            'abrirCaja' => 1,
+            'cerrarCaja' => -1,
+            'abrirCaja' => -1,
             'getSaldoFinalAnterior' => -1,
             'getResultado' => 1,
             'createEncomienda' => 1,
@@ -158,7 +158,8 @@ class Main
             'getAReponer' => 1
         ),
         'Reportes' => array(
-            'cierreDeCaja' => 1, 'updateStock' => 1
+            'cierreDeCaja' => -1,
+            'updateStock' => 1
         ),
         'Sucursales' => array('get' => -1,
             'create' => -1,
