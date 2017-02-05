@@ -16,6 +16,7 @@
     "angular-animate": "^1.6.1",
     "a0-angular-storage": "^0.0.15",
     "angular-jwt": "^0.1.9",
-    "angular-scroll": "^1.0.0"
+    "angular-scroll": "^1.0.0",
+    "mv-angular-cajas": "*"
   }
 }
