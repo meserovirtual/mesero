@@ -137,14 +137,14 @@ class Main
             'removeProductoTipo' => -1
         ),
         'Cajas' => array(
-            'getTotalByCuenta' => 1,
+            'getTotalByCuenta' => -1,
             'getSaldoInicial' => 1,
             'getCajaDiaria' => 1,
             'checkEstado' => -1,
             'cerrarCaja' => -1,
             'abrirCaja' => -1,
             'getSaldoFinalAnterior' => -1,
-            'getResultado' => 1,
+            'getResultado' => -1,
             'createEncomienda' => 1,
             'updateEncomienda' => 1,
             'getEncomiendas' => 1
