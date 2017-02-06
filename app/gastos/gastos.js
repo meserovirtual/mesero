@@ -3,7 +3,7 @@
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
 
-    angular.module('myApp.gastos', ['ngRoute'])
+    angular.module('myApp.gastos', ['ngRoute', ['bower_components/mv-angular-cajas/mv-gastos.js']])
         .controller('GastosCtrl', GastosCtrl);
 
 
