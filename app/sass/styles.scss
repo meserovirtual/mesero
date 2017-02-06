@@ -393,6 +393,7 @@ select {
   border: 1px solid #979797;
   box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
   border-radius: 8px;
+  display: inherit;
 }
 
 /* Remove focus */
@@ -456,6 +457,15 @@ textarea {
   font-weight: bolder;
   margin-bottom: 10px;
   //display: block;
+}
+.botones,
+  //input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="time"] {
+  display: inherit;
 }
 
 /* USE ESTE RECURSO PARA ARMAR EL TOOLTIP
@@ -772,6 +782,10 @@ $divider: sqrt($cells);
   width: 50%;
   margin: 0 auto;
 }
+.container-form {
+  width: calc(100% - 20px);
+}
+
 .primary{
   background-color: #00CE5D;
 }
