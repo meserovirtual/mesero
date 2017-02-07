@@ -190,8 +190,8 @@ class Main
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
         if (!isset($this->db)) {
-            $this->db = get('mv-local');
-            //$this->db = get('mv-test');
+            //$this->db = get('mv-local');
+            $this->db = get('mv-test');
         }
     }
 }
