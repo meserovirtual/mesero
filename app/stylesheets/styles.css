@@ -804,7 +804,6 @@ h3 {
 
 /* line 734, ../sass/styles.scss */
 .mv-col {
-  display: flex;
   flex-direction: row;
 }
 @media (max-width: 360px) {
