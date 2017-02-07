@@ -21,7 +21,7 @@
         'mvProductosAdministracion',
         'mvCategoriasAdministracion',
         'mvProductoTipoAdministracion',
-        'acStocks',
+        'mvStocks',
         'acMovimientos',
         'acHelper',
         'mvCajas',
