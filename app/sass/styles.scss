@@ -212,22 +212,14 @@ form{
   box-shadow: inset -2px 7px 6px 0px rgba(0,0,0,0.50);
 
 
-
-
-  /* Rectangle 3 Copy 29: */
-
   h3{
     font-family: "Roboto", 'sans-serif';
     padding: 0px;
     color: white;
     font-weight: lighter;
   }
-
-  @media (max-width: 360px) {
-    width: 100%;
-    padding: 0!important;
-  }
 }
+
 
 
 //////////////CHECKBOX
@@ -421,6 +413,9 @@ h1 {
   -moz-animation-name: FadeInTop;
   -o-animation-name: FadeInTop;
   animation-name: FadeInTop;
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
 
 }
 
@@ -848,9 +843,7 @@ $divider: sqrt($cells);
   .view-container{
     margin: 130px 10px 0 10px!important;
   }
-  .container{
-    width: 100%!important;
-  }
+
   .form-lista{
     display: none;
   }
