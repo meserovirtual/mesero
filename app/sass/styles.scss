@@ -201,12 +201,19 @@ section{
 
 form{
   text-align: -webkit-center;
-  font-family: "Roboto", 'sans-serif';
-  background: #293333;
+  //background: #293333;
   border-radius: 5px;
   min-height: 200px;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  /* Rectangle 4 Copy: */
+  background: #4A4A4A;
+  border: 1px solid #979797;
+  box-shadow: inset -2px 7px 6px 0px rgba(0,0,0,0.50);
+
+
+
+
   /* Rectangle 3 Copy 29: */
 
   h3{
@@ -856,12 +863,9 @@ $divider: sqrt($cells);
 }
 .container{
   //width: 700px;
-  width: 60%;
   margin: 0 auto;
 }
-.container-bgk{
-  background-color: #e5e5e5;
-}
+
 .container-padding{
   padding: 20px;
 }
@@ -875,7 +879,7 @@ $divider: sqrt($cells);
   margin: 0 auto;
 }
 .container-form {
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
 }
 
 .primary{
