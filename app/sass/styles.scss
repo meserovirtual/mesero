@@ -621,7 +621,7 @@ label{
 }
 
 textarea{
-  width: 95%;
+  width: calc(100% - 20px);
   margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
