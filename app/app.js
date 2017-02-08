@@ -16,7 +16,7 @@
         'mvSucursales',
         'mvSucursalesAdministracion',
         'LangTables',
-        'acUploads',
+        'mvUploads',
         'mvProductos',
         'mvProductosAdministracion',
         'mvCategoriasAdministracion',
@@ -210,11 +210,24 @@
         $routeProvider.when('/working', {
             templateUrl: 'working/working.html',
             controller: 'WorkingCtrl',
-            //data: {requiresLogin: false},
+            data: {requiresLogin: false},
             resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('working/working.js');
+                }]
+            }
+        });
+
+
+        $routeProvider.when('/login', {
+            templateUrl: 'login/login.html',
+            controller: 'LoginController',
+            //data: {requiresLogin: false},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('login/login.js');
                 }]
             }
         });
