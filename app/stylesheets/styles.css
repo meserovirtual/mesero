@@ -2195,6 +2195,31 @@ ul.enlarge img, ul.enlarge span {
 }
 
 /* line 2073, ../sass/styles.scss */
+.form-container-wrapper {
+  width: 70%;
+}
+@media (max-width: 780px) {
+  /* line 2073, ../sass/styles.scss */
+  .form-container-wrapper {
+    width: 100%;
+  }
+}
+
+/* line 2079, ../sass/styles.scss */
+.form-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  /* line 2079, ../sass/styles.scss */
+  .form-flex {
+    flex-direction: column;
+  }
+}
+
+/* line 2090, ../sass/styles.scss */
 mv-autocomplete {
   display: inherit;
 }

@@ -2070,6 +2070,24 @@ ul.enlarge img, ul.enlarge span{
   justify-content: space-around;
   align-items: center;
 }
+.form-container-wrapper{
+  width: 70%;
+  @media (max-width: 780px) {
+    width: 100%;
+  }
+}
+.form-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+}
 mv-autocomplete {
   display: inherit;
 }
+
