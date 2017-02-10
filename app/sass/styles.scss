@@ -1189,7 +1189,6 @@ $success-text: #597151;
   //-webkit-animation-delay: 0.3s;
   //-moz-animation-delay: 0.3s;
   //animation-delay: 0.3s;
-
 }
 
 button:focus { outline-style: none!important; }
@@ -2062,8 +2061,15 @@ ul.enlarge img, ul.enlarge span{
 .buscador-container{
   width: calc(100% - 40px);
 }
-
 .margin-top {
   margin-top: 10px;
 }
-
+.form-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+mv-autocomplete {
+  display: inherit;
+}

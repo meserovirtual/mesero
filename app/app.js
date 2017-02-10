@@ -22,7 +22,7 @@
         'mvCategoriasAdministracion',
         'mvProductoTipoAdministracion',
         'mvStocks',
-        'acMovimientos',
+        'mvMovimientos',
         'acHelper',
         'mvCajas',
         'mvCobros',
@@ -32,6 +32,7 @@
         'mvReporteTraslado',
         'mvContacts',
         'mvEncomiendas',
+        'mvTraslado',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
 

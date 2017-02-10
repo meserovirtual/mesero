@@ -6,7 +6,6 @@
     angular.module('myApp.sucursales', ['ngRoute'])
         .controller('SucursalesCtrl', SucursalesCtrl);
 
-
     SucursalesCtrl.$inject = ['$scope'];
     function SucursalesCtrl($scope) {
 
