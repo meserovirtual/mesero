@@ -15,7 +15,6 @@
         'mvProveedoresAdministracion',
         'mvSucursales',
         'mvSucursalesAdministracion',
-        'LangTables',
         'mvUploads',
         'mvProductos',
         'mvProductosAdministracion',
@@ -23,7 +22,6 @@
         'mvProductoTipoAdministracion',
         'mvStocks',
         'mvMovimientos',
-        'acHelper',
         'mvCajas',
         'mvCobros',
         'mvResumenCajaDiaria',
@@ -33,6 +31,8 @@
         'mvContacts',
         'mvEncomiendas',
         'mvTraslado',
+        'LangTables',
+        'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
 
