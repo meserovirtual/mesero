@@ -435,6 +435,7 @@
                         'bower_components/mv-angular-cajas/mv-abrir-cerrar-caja.js',
                         'bower_components/mv-angular-reportes/mv-reportes.js',
                         'bower_components/mv-angular-reportes/mv-reporte-traslado.js',
+                        'bower_components/mv-angular-reportes/mv-deudores.js',
                         'bower_components/mv-angular-contacts/mv-contacts.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
@@ -591,6 +592,18 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'movimientos'}">Movimientos</a>
                 <a href="#!/caja/detalle_caja" ng-click="appCtrl.sub_menu = 'detalle_caja'"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'detalle_caja'}">Detalle de Caja</a>
+            </div>
+            <div ng-if="appCtrl.menu =='reportes'" class="sub-menu">
+                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Platos Más Vendidos</a>
+                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Ventas Totales</a>
+                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Tiempos de Elavoración</a>
+                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Deudores</a>
+                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Stock</a>
             </div>
             <div ng-if="appCtrl.menu =='settings'" class="sub-menu">
                 <a href="#!/settings/clientes" ng-click="appCtrl.sub_menu = 'clientes'"

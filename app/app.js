@@ -31,6 +31,7 @@
         'mvContacts',
         'mvEncomiendas',
         'mvTraslado',
+        'mvDeudores',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -229,6 +230,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('login/login.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/deudores', {
+            templateUrl: 'deudores/deudores.html',
+            controller: 'DeudoresCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('deudores/deudores.js');
                 }]
             }
         });
