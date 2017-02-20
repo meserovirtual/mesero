@@ -476,7 +476,6 @@ select {
   padding: $select-padding 0;
   font-size: $select-font-size;
   color: black;
-  margin-bottom: 10px;
   height: 39px;
   /* Rectangle 2 Copy 3: */
   background: #D8D8D8;
@@ -484,6 +483,7 @@ select {
   box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
   border-radius: 8px;
   display: inherit;
+  margin: 2px;
 }
 
 /* Remove focus */
@@ -493,11 +493,10 @@ select:focus {
 /* Hide label */
 .mdl-selectfield label {display: none;}
 /* Use custom arrow */
-.mdl-selectfield select {appearance: none}
+.mdl-selectfield select {appearance: none; margin-top: 5px}
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative;
-  margin-right: 10px;
   &:after {
     position: absolute;
     top: 0.75em;
@@ -545,7 +544,7 @@ textarea {
   padding-right: 10px;
   font-size: 16px;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin:2px;
   //display: block;
 }
 .botones,
@@ -623,6 +622,7 @@ textarea{
   margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
+  margin-bottom: 15px;
   //display: block;
 }
 
@@ -820,6 +820,9 @@ $divider: sqrt($cells);
   //padding: 10px;
   @media (max-width: 360px) {
     flex-direction: column;
+    input{
+      width: calc(100% - 24px)!important;
+    }
   }
 }
 
@@ -931,6 +934,11 @@ $divider: sqrt($cells);
   padding: 15px;
   max-height: 230px;
   overflow-y: auto;
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
 }
 
 input.buscador{
@@ -938,11 +946,14 @@ input.buscador{
   background: url(images/lupa.svg) no-repeat #D8D8D8 scroll 0px 0px;
   padding-left:40px;
   color:#000;
+  width: calc(100% - 14px)!important;
+
 }
 
 .titulo-imagen{
   font-weight: bold;
   font-size: 12px;
+  font-family: "Roboto", 'sans-serif';
   margin-bottom: 5px;
 }
 
@@ -1829,7 +1840,7 @@ ol, ul {
 .label--radio{
   position: relative;
   margin: .5rem;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", 'sans-serif';
   line-height: 135%;
   cursor: pointer;
 }
