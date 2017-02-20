@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
-/* line 5, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -500,7 +500,6 @@ select {
   padding: 4px 0;
   font-size: 16px;
   color: black;
-  margin-bottom: 10px;
   height: 39px;
   /* Rectangle 2 Copy 3: */
   background: #D8D8D8;
@@ -508,6 +507,7 @@ select {
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   display: inherit;
+  margin: 2px;
 }
 
 /* Remove focus */
@@ -526,15 +526,19 @@ select:focus {
 /* line 496, ../sass/styles.scss */
 .mdl-selectfield select {
   appearance: none;
+  margin-top: 5px;
 }
 
 /* line 497, ../sass/styles.scss */
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative;
-  margin-right: 10px;
 }
+<<<<<<< Updated upstream
 /* line 501, ../sass/styles.scss */
+=======
+/* line 499, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mdl-selectfield:after {
   position: absolute;
   top: 0.75em;
@@ -550,12 +554,20 @@ select:focus {
   pointer-events: none;
 }
 
+<<<<<<< Updated upstream
 /* line 522, ../sass/styles.scss */
+=======
+/* line 520, ../sass/styles.scss */
+>>>>>>> Stashed changes
 a {
   color: black;
 }
 
+<<<<<<< Updated upstream
 /* line 526, ../sass/styles.scss */
+=======
+/* line 524, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .botones,
 input[type="text"],
 input[type="email"],
@@ -577,10 +589,14 @@ textarea {
   padding-right: 10px;
   font-size: 16px;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin: 2px;
 }
 
+<<<<<<< Updated upstream
 /* line 551, ../sass/styles.scss */
+=======
+/* line 549, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .botones,
 input[type="text"],
 input[type="email"],
@@ -593,12 +609,20 @@ input[type="time"] {
 /* USE ESTE RECURSO PARA ARMAR EL TOOLTIP
 http://jsfiddle.net/BumU5/3/
 */
+<<<<<<< Updated upstream
 /* line 564, ../sass/styles.scss */
+=======
+/* line 562, ../sass/styles.scss */
+>>>>>>> Stashed changes
 [data-tip] {
   position: relative;
 }
 
+<<<<<<< Updated upstream
 /* line 567, ../sass/styles.scss */
+=======
+/* line 565, ../sass/styles.scss */
+>>>>>>> Stashed changes
 [data-tip]:before {
   content: '';
   /* hides the tooltip when not hovered */
@@ -618,7 +642,11 @@ http://jsfiddle.net/BumU5/3/
   height: 0;
 }
 
+<<<<<<< Updated upstream
 /* line 585, ../sass/styles.scss */
+=======
+/* line 583, ../sass/styles.scss */
+>>>>>>> Stashed changes
 [data-tip]:after {
   display: none;
   content: attr(data-tip);
@@ -641,13 +669,21 @@ http://jsfiddle.net/BumU5/3/
   margin: 5px 3px;
 }
 
+<<<<<<< Updated upstream
 /* line 607, ../sass/styles.scss */
+=======
+/* line 605, ../sass/styles.scss */
+>>>>>>> Stashed changes
 [data-tip]:hover:before,
 [data-tip]:hover:after {
   display: block;
 }
 
+<<<<<<< Updated upstream
 /* line 613, ../sass/styles.scss */
+=======
+/* line 611, ../sass/styles.scss */
+>>>>>>> Stashed changes
 label {
   display: inline-block;
   opacity: 1;
@@ -656,12 +692,17 @@ label {
   padding: 2px;
 }
 
+<<<<<<< Updated upstream
 /* line 621, ../sass/styles.scss */
+=======
+/* line 619, ../sass/styles.scss */
+>>>>>>> Stashed changes
 textarea {
   width: calc(100% - 20px);
   margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
+  margin-bottom: 15px;
 }
 
 /* line 629, ../sass/styles.scss */
@@ -870,100 +911,176 @@ h3 {
   .mv-col {
     flex-direction: column;
   }
+  /* line 822, ../sass/styles.scss */
+  .mv-col input {
+    width: calc(100% - 24px) !important;
+  }
 }
 
+<<<<<<< Updated upstream
 /* line 826, ../sass/styles.scss */
+=======
+/* line 828, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .gastos {
   display: block;
 }
 
+<<<<<<< Updated upstream
 /* line 830, ../sass/styles.scss */
+=======
+/* line 832, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-col-6 {
   width: 50%;
   padding: 0 15px;
 }
+<<<<<<< Updated upstream
 /* line 833, ../sass/styles.scss */
+=======
+/* line 835, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-col-6 h3 {
   margin-bottom: 10px;
 }
 
+<<<<<<< Updated upstream
 /* line 837, ../sass/styles.scss */
+=======
+/* line 839, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-col-12 {
   width: 100%;
 }
 
 @media (max-width: 760px) {
+<<<<<<< Updated upstream
   /* line 842, ../sass/styles.scss */
+=======
+  /* line 844, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .mv-col-sm-12 {
     width: 100%;
     padding: 0;
   }
 
+<<<<<<< Updated upstream
   /* line 846, ../sass/styles.scss */
+=======
+  /* line 848, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .view-container {
     margin: 130px 10px 0 10px !important;
   }
 
+<<<<<<< Updated upstream
   /* line 850, ../sass/styles.scss */
+=======
+  /* line 852, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .form-lista {
     display: none;
   }
 
+<<<<<<< Updated upstream
   /* line 853, ../sass/styles.scss */
+=======
+  /* line 855, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .ocultar-columna {
     display: none;
   }
 }
+<<<<<<< Updated upstream
 /* line 857, ../sass/styles.scss */
+=======
+/* line 859, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .view-container {
   margin: 130px 25px 0 25px;
 }
 
+<<<<<<< Updated upstream
 /* line 860, ../sass/styles.scss */
+=======
+/* line 862, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .container {
   margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 /* line 865, ../sass/styles.scss */
+=======
+/* line 867, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .container-padding {
   padding: 20px;
 }
 
+<<<<<<< Updated upstream
 /* line 868, ../sass/styles.scss */
+=======
+/* line 870, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .container-small {
   width: 60%;
   margin: 0 auto;
   border-radius: 5px;
 }
 
+<<<<<<< Updated upstream
 /* line 873, ../sass/styles.scss */
+=======
+/* line 875, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .container-small-2 {
   width: 50%;
   margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 /* line 877, ../sass/styles.scss */
+=======
+/* line 879, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .container-form {
   width: calc(100% - 40px);
 }
 
+<<<<<<< Updated upstream
 /* line 881, ../sass/styles.scss */
+=======
+/* line 883, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .primary {
   background-color: #00CE5D;
 }
 
+<<<<<<< Updated upstream
 /* line 884, ../sass/styles.scss */
+=======
+/* line 886, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-footer {
   background-color: #79996D;
   width: 451px;
 }
 
+<<<<<<< Updated upstream
 /* line 888, ../sass/styles.scss */
+=======
+/* line 890, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .terciary {
   background-color: darkviolet;
 }
 
+<<<<<<< Updated upstream
 /* line 891, ../sass/styles.scss */
+=======
+/* line 893, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .input-paginacion, .input-paginacion2 {
   width: 50px !important;
   text-align: center;
@@ -971,17 +1088,29 @@ h3 {
   height: 20px !important;
 }
 
+<<<<<<< Updated upstream
 /* line 898, ../sass/styles.scss */
+=======
+/* line 900, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .input-paginacion2 {
   height: 20px !important;
 }
 
+<<<<<<< Updated upstream
 /* line 902, ../sass/styles.scss */
+=======
+/* line 904, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel-primary {
   border-color: #79996D;
 }
 
+<<<<<<< Updated upstream
 /* line 905, ../sass/styles.scss */
+=======
+/* line 907, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel {
   margin-bottom: 20px;
   border: 1px solid #79996D;
@@ -991,25 +1120,41 @@ h3 {
   width: 500px;
 }
 @media (max-width: 360px) {
+<<<<<<< Updated upstream
   /* line 905, ../sass/styles.scss */
+=======
+  /* line 907, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .panel {
     width: 100%;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 916, ../sass/styles.scss */
+=======
+/* line 918, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel-primary > .panel-heading {
   color: #fff;
   background-color: #79996D;
   border-color: #79996D;
 }
 
+<<<<<<< Updated upstream
 /* line 921, ../sass/styles.scss */
+=======
+/* line 923, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel-group .panel-heading {
   border-bottom: 0;
 }
 
+<<<<<<< Updated upstream
 /* line 924, ../sass/styles.scss */
+=======
+/* line 926, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
@@ -1017,55 +1162,95 @@ h3 {
   border-top-right-radius: 3px;
 }
 
+<<<<<<< Updated upstream
 /* line 930, ../sass/styles.scss */
+=======
+/* line 932, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .panel-body {
   padding: 15px;
   max-height: 230px;
   overflow-y: auto;
 }
-
 /* line 936, ../sass/styles.scss */
+.panel-body .list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+<<<<<<< Updated upstream
+/* line 936, ../sass/styles.scss */
+=======
+/* line 943, ../sass/styles.scss */
+>>>>>>> Stashed changes
 input.buscador {
   background: url(images/lupa.svg) no-repeat #D8D8D8 scroll 0px 0px;
   padding-left: 40px;
   color: #000;
+  width: calc(100% - 14px) !important;
 }
 
+<<<<<<< Updated upstream
 /* line 943, ../sass/styles.scss */
+=======
+/* line 952, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .titulo-imagen {
   font-weight: bold;
   font-size: 12px;
+  font-family: "Roboto", 'sans-serif';
   margin-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
 /* line 949, ../sass/styles.scss */
+=======
+/* line 959, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .input-foto {
   margin: 10px;
   display: flex;
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 /* line 958, ../sass/styles.scss */
+=======
+/* line 968, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .input-foto img {
   margin-right: 5px;
   border-radius: 50%;
 }
 
+<<<<<<< Updated upstream
 /* line 964, ../sass/styles.scss */
+=======
+/* line 974, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .foto {
   text-align: center;
   max-width: 142px;
   margin: 5px auto;
 }
 
+<<<<<<< Updated upstream
 /* line 969, ../sass/styles.scss */
+=======
+/* line 979, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .wrapper {
   width: 100%;
   height: 100%;
   margin-right: 4px;
   display: flex;
 }
+<<<<<<< Updated upstream
 /* line 979, ../sass/styles.scss */
+=======
+/* line 989, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .wrapper .file-upload {
   height: 30px;
   width: 30px;
@@ -1082,7 +1267,11 @@ input.buscador {
   color: #FFFFFF;
   font-size: 12px;
 }
+<<<<<<< Updated upstream
 /* line 998, ../sass/styles.scss */
+=======
+/* line 1008, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .wrapper .file-upload input[type='file'] {
   height: 30px;
   width: 30px;
@@ -1092,18 +1281,30 @@ input.buscador {
   opacity: 0;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 /* line 1009, ../sass/styles.scss */
+=======
+/* line 1019, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .wrapper .file-upload:hover {
   background-position: 0 -100%;
   color: #79996D;
 }
 
+<<<<<<< Updated upstream
 /* line 1016, ../sass/styles.scss */
+=======
+/* line 1026, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .error-message {
   display: none;
 }
 
+<<<<<<< Updated upstream
 /* line 1026, ../sass/styles.scss */
+=======
+/* line 1036, ../sass/styles.scss */
+>>>>>>> Stashed changes
 input[type="text"].error-input,
 input[type="email"].error-input,
 input[type="password"].error-input,
@@ -1172,7 +1373,11 @@ textarea.error-input {
     transform: translateX(10px);
   }
 }
+<<<<<<< Updated upstream
 /* line 1078, ../sass/styles.scss */
+=======
+/* line 1088, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-mensaje-custom-show {
   position: fixed;
   height: 50px;
@@ -1182,23 +1387,36 @@ textarea.error-input {
   left: calc(50% - 210px);
   vertical-align: middle;
 }
+<<<<<<< Updated upstream
 /* line 1087, ../sass/styles.scss */
+=======
+/* line 1097, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-mensaje-custom-show i {
   vertical-align: middle;
   padding: 10px 10px 10px 0;
 }
+<<<<<<< Updated upstream
 /* line 1091, ../sass/styles.scss */
+=======
+/* line 1101, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-mensaje-custom-show i.exit-button {
   float: right;
   vertical-align: middle;
   opacity: .4;
   padding: 10px 0 10px 10px;
 }
+<<<<<<< Updated upstream
 /* line 1096, ../sass/styles.scss */
+=======
+/* line 1106, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-mensaje-custom-show i.exit-button:hover {
   opacity: .8;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 /* line 1102, ../sass/styles.scss */
 .mv-mensaje-custom-show i.ico-info {
   color: #447EAF !important;
@@ -1212,11 +1430,30 @@ textarea.error-input {
   color: #597151 !important;
 }
 /* line 1111, ../sass/styles.scss */
+=======
+/* line 1112, ../sass/styles.scss */
+.mv-mensaje-custom-show i.ico-info {
+  color: #447EAF !important;
+}
+/* line 1115, ../sass/styles.scss */
+.mv-mensaje-custom-show i.ico-warn {
+  color: #96722E !important;
+}
+/* line 1118, ../sass/styles.scss */
+.mv-mensaje-custom-show i.ico-success {
+  color: #597151 !important;
+}
+/* line 1121, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-mensaje-custom-show i.ico-error {
   color: #597151 !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1127, ../sass/styles.scss */
+=======
+/* line 1137, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-error-message, .mv-success-message, .mv-info-message, .mv-warning-message {
   padding: 20px;
   font-size: 16px;
@@ -1228,35 +1465,55 @@ textarea.error-input {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+<<<<<<< Updated upstream
 /* line 1144, ../sass/styles.scss */
+=======
+/* line 1154, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-error-message {
   background-color: #ECC8C5;
   border: #d37f78 2px solid;
   color: #B83C37 !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1150, ../sass/styles.scss */
+=======
+/* line 1160, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-success-message {
   background-color: #DDF3D5;
   border: #9ddc86 2px solid;
   color: #597151;
 }
 
+<<<<<<< Updated upstream
 /* line 1156, ../sass/styles.scss */
+=======
+/* line 1166, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-info-message {
   background-color: #CDE8F6;
   border: #2697d1 2px solid;
   color: #447EAF !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1162, ../sass/styles.scss */
+=======
+/* line 1172, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-warning-message {
   background-color: #F8F4D5;
   border: #e9dd7e 2px solid;
   color: #96722E !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1168, ../sass/styles.scss */
+=======
+/* line 1178, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -1284,17 +1541,29 @@ textarea.error-input {
   animation-duration: 1s;
 }
 
+<<<<<<< Updated upstream
 /* line 1198, ../sass/styles.scss */
+=======
+/* line 1208, ../sass/styles.scss */
+>>>>>>> Stashed changes
 button:focus {
   outline-style: none !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1200, ../sass/styles.scss */
+=======
+/* line 1210, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .row-warning {
   color: gold;
 }
 
+<<<<<<< Updated upstream
 /* line 1206, ../sass/styles.scss */
+=======
+/* line 1216, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .header {
   font-family: 'Merriweather', serif;
   font-weight: bolder;
@@ -1307,7 +1576,11 @@ button:focus {
   z-index: 1000;
 }
 @media (min-width: 800px) {
+<<<<<<< Updated upstream
   /* line 1206, ../sass/styles.scss */
+=======
+  /* line 1216, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .header {
     display: flex;
     height: 50px;
@@ -1317,7 +1590,11 @@ button:focus {
   }
 }
 
+<<<<<<< Updated upstream
 /* line 1226, ../sass/styles.scss */
+=======
+/* line 1236, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-icon {
   width: 45px;
   height: 45px;
@@ -1327,13 +1604,21 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 /* line 1235, ../sass/styles.scss */
+=======
+/* line 1245, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-icon:hover, .menu-icon2:hover {
   -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 1241, ../sass/styles.scss */
+=======
+/* line 1251, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-icon2 {
   width: 39px;
   height: 90px;
@@ -1345,7 +1630,11 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 /* line 1252, ../sass/styles.scss */
+=======
+/* line 1262, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-icon-mobile {
   width: 125px;
   height: 140px;
@@ -1357,18 +1646,30 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 /* line 1264, ../sass/styles.scss */
+=======
+/* line 1274, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .login-panel-form .botonera {
   margin-bottom: 10px !important;
 }
 
+<<<<<<< Updated upstream
 /* line 1267, ../sass/styles.scss */
+=======
+/* line 1277, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .botonera {
   text-align: center;
   margin-top: 10px;
 }
 
+<<<<<<< Updated upstream
 /* line 1272, ../sass/styles.scss */
+=======
+/* line 1282, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .nav-button {
   flex: 1;
   margin-top: 15px;
@@ -1381,7 +1682,11 @@ button:focus {
   transform-origin: 13px 13px;
   transform-style: preserve-3D;
 }
+<<<<<<< Updated upstream
 /* line 1284, ../sass/styles.scss */
+=======
+/* line 1294, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .nav-button div {
   cursor: pointer;
   width: 25px;
@@ -1395,7 +1700,11 @@ button:focus {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
+<<<<<<< Updated upstream
 /* line 1298, ../sass/styles.scss */
+=======
+/* line 1308, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .nav-button .nav-button-top-transformed {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1403,7 +1712,11 @@ button:focus {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+<<<<<<< Updated upstream
 /* line 1305, ../sass/styles.scss */
+=======
+/* line 1315, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .nav-button .nav-button-mid-transformed {
   -webkit-transform: translate(-3px, 0px);
   -moz-transform: translate(-3px, 0px);
@@ -1411,7 +1724,11 @@ button:focus {
   -o-transform: translate(-3px, 0px);
   transform: translate(-3px, 0px);
 }
+<<<<<<< Updated upstream
 /* line 1312, ../sass/styles.scss */
+=======
+/* line 1322, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .nav-button .nav-button-bot-transformed {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1444,13 +1761,21 @@ button:focus {
     opacity: 1;
   }
 }
+<<<<<<< Updated upstream
 /* line 1348, ../sass/styles.scss */
+=======
+/* line 1358, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile {
   display: flex;
   height: 100%;
   z-index: 100;
 }
+<<<<<<< Updated upstream
 /* line 1353, ../sass/styles.scss */
+=======
+/* line 1363, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile .header-separator {
   height: 40px;
   margin-top: 5px;
@@ -1458,7 +1783,11 @@ button:focus {
   margin-left: 40px;
   background-color: white;
 }
+<<<<<<< Updated upstream
 /* line 1361, ../sass/styles.scss */
+=======
+/* line 1371, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile .logo {
   flex: 5;
   padding: 5px;
@@ -1467,7 +1796,11 @@ button:focus {
   margin-top: 6px;
 }
 
+<<<<<<< Updated upstream
 /* line 1370, ../sass/styles.scss */
+=======
+/* line 1380, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-panel {
   font-family: "Roboto", 'sans-serif';
   font-size: 14px;
@@ -1507,11 +1840,19 @@ button:focus {
   -o-transform: translate(-1000px, 0);
   transform: translate(-1000px, 0);
 }
+<<<<<<< Updated upstream
 /* line 1398, ../sass/styles.scss */
 .menu-mobile-panel a {
   text-decoration: none;
 }
 /* line 1402, ../sass/styles.scss */
+=======
+/* line 1408, ../sass/styles.scss */
+.menu-mobile-panel a {
+  text-decoration: none;
+}
+/* line 1412, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-panel .menu-desktop-btn {
   text-align: center;
   font-weight: Bold;
@@ -1532,33 +1873,53 @@ button:focus {
   animation-duration: .2s;
 }
 @media (max-width: 800px) {
+<<<<<<< Updated upstream
   /* line 1402, ../sass/styles.scss */
+=======
+  /* line 1412, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .menu-mobile-panel .menu-desktop-btn {
     font-size: 20px;
   }
 }
 @media (min-width: 800px) {
+<<<<<<< Updated upstream
   /* line 1370, ../sass/styles.scss */
+=======
+  /* line 1380, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .menu-mobile-panel {
     visibility: collapse;
     display: none;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 1443, ../sass/styles.scss */
+=======
+/* line 1453, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .sub-menu-mobile {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< Updated upstream
 /* line 1448, ../sass/styles.scss */
+=======
+/* line 1458, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .sub-menu-mobile a {
   font-size: 16px;
   color: white;
   margin: 10px 25px;
 }
 
+<<<<<<< Updated upstream
 /* line 1455, ../sass/styles.scss */
+=======
+/* line 1465, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-panel-show {
   -webkit-transform: translate(0px, 0);
   -moz-transform: translate(0px, 0);
@@ -1567,14 +1928,22 @@ button:focus {
   transform: translate(0px, 0);
 }
 
+<<<<<<< Updated upstream
 /* line 1463, ../sass/styles.scss */
+=======
+/* line 1473, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-panel-show-add {
   -webkit-animation: menu-mobile-enter 0.4s;
   -o-animation: menu-mobile-enter 0.4s;
   animation: menu-mobile-enter 0.4s;
 }
 
+<<<<<<< Updated upstream
 /* line 1469, ../sass/styles.scss */
+=======
+/* line 1479, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-panel-show-remove {
   -webkit-animation: menu-mobile-leave 0.4s;
   -o-animation: menu-mobile-leave 0.4s;
@@ -1613,7 +1982,11 @@ button:focus {
     transform: translate(-1000px, 0);
   }
 }
+<<<<<<< Updated upstream
 /* line 1511, ../sass/styles.scss */
+=======
+/* line 1521, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-type-desktop {
   -webkit-transition: transform 0.4s ease;
   -moz-transition: transform 0.4s ease;
@@ -1622,7 +1995,11 @@ button:focus {
   transition: transform 0.4s ease;
 }
 @media (max-width: 799px) {
+<<<<<<< Updated upstream
   /* line 1511, ../sass/styles.scss */
+=======
+  /* line 1521, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .menu-type-desktop {
     visibility: collapse;
     display: none !important;
@@ -1630,7 +2007,11 @@ button:focus {
 }
 
 @media (min-width: 800px) {
+<<<<<<< Updated upstream
   /* line 1524, ../sass/styles.scss */
+=======
+  /* line 1534, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .menu-type-mobile {
     visibility: collapse;
     display: none !important;
@@ -1638,14 +2019,22 @@ button:focus {
 }
 
 @media (min-width: 800px) {
+<<<<<<< Updated upstream
   /* line 1531, ../sass/styles.scss */
+=======
+  /* line 1541, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .header-as-main {
     width: 100%;
     height: 100%;
     padding: 10px 0;
     text-align: justify;
   }
+<<<<<<< Updated upstream
   /* line 1542, ../sass/styles.scss */
+=======
+  /* line 1552, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .header-as-main #menu-desktop-logo {
     -webkit-transform: scale(5, 5);
     -moz-transform: scale(5, 5);
@@ -1656,7 +2045,11 @@ button:focus {
   }
 }
 
+<<<<<<< Updated upstream
 /* line 1555, ../sass/styles.scss */
+=======
+/* line 1565, ../sass/styles.scss */
+>>>>>>> Stashed changes
 #menu-mobile-logo {
   opacity: 0;
   margin-bottom: 30px;
@@ -1694,13 +2087,21 @@ button:focus {
     transform: scale(5, 5);
   }
 }
+<<<<<<< Updated upstream
 /* line 1595, ../sass/styles.scss */
+=======
+/* line 1605, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop {
   display: flex;
   width: 100%;
   height: 50px;
 }
+<<<<<<< Updated upstream
 /* line 1605, ../sass/styles.scss */
+=======
+/* line 1615, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-logo {
   background-color: transparent;
   margin-right: 10px;
@@ -1718,11 +2119,19 @@ button:focus {
   -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
+<<<<<<< Updated upstream
 /* line 1629, ../sass/styles.scss */
 .menu-desktop #menu-desktop-logo:hover {
   cursor: pointer;
 }
 /* line 1633, ../sass/styles.scss */
+=======
+/* line 1639, ../sass/styles.scss */
+.menu-desktop #menu-desktop-logo:hover {
+  cursor: pointer;
+}
+/* line 1643, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-right {
   display: flex;
   /* flex-direction: column; */
@@ -1730,18 +2139,30 @@ button:focus {
   width: 60%;
   align-items: center;
 }
+<<<<<<< Updated upstream
 /* line 1640, ../sass/styles.scss */
+=======
+/* line 1650, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-right .sub-menu {
   font-family: "Roboto", 'sans-serif';
   font-size: 14px;
 }
+<<<<<<< Updated upstream
 /* line 1644, ../sass/styles.scss */
+=======
+/* line 1654, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-right .sub-menu a {
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
 }
+<<<<<<< Updated upstream
 /* line 1649, ../sass/styles.scss */
+=======
+/* line 1659, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-right .sub-menu a:hover {
   color: #79996D !important;
   cursor: pointer;
@@ -1751,7 +2172,11 @@ button:focus {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+<<<<<<< Updated upstream
 /* line 1662, ../sass/styles.scss */
+=======
+/* line 1672, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left {
     /*
     #menu-desktop-upper {
@@ -1764,7 +2189,11 @@ button:focus {
       flex: 0;
     }*/
 }
+<<<<<<< Updated upstream
 /* line 1675, ../sass/styles.scss */
+=======
+/* line 1685, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left #menu-desktop-lower {
   background-color: transparent;
   max-width: 100%;
@@ -1774,14 +2203,22 @@ button:focus {
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+<<<<<<< Updated upstream
 /* line 1685, ../sass/styles.scss */
+=======
+/* line 1695, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left #menu-desktop-lower #menu-desktop-lower-inner {
   max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
+<<<<<<< Updated upstream
 /* line 1692, ../sass/styles.scss */
+=======
+/* line 1702, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn {
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
@@ -1802,12 +2239,20 @@ button:focus {
   -moz-animation-duration: 2s;
   animation-duration: 2s;
 }
+<<<<<<< Updated upstream
 /* line 1717, ../sass/styles.scss */
+=======
+/* line 1727, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn-selected {
   color: bolder;
   opacity: 1;
 }
+<<<<<<< Updated upstream
 /* line 1721, ../sass/styles.scss */
+=======
+/* line 1731, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:hover,
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:focus,
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:active {
@@ -1821,7 +2266,11 @@ button:focus {
   transition: opacity 2s ease;
 }
 
+<<<<<<< Updated upstream
 /* line 1743, ../sass/styles.scss */
+=======
+/* line 1753, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .login {
   font-family: 'Merriweather', serif;
   font-weight: bolder;
@@ -1837,12 +2286,20 @@ button:focus {
   padding-right: 5px;
 }
 
+<<<<<<< Updated upstream
 /* line 1759, ../sass/styles.scss */
+=======
+/* line 1769, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .login img:hover {
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 1767, ../sass/styles.scss */
+=======
+/* line 1777, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-container {
   display: flex;
   flex-direction: row;
@@ -1851,13 +2308,21 @@ button:focus {
   max-height: 1300px;
 }
 
+<<<<<<< Updated upstream
 /* line 1774, ../sass/styles.scss */
+=======
+/* line 1784, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-lista {
   width: 77%;
   margin: 0 10px;
 }
 
+<<<<<<< Updated upstream
 /* line 1778, ../sass/styles.scss */
+=======
+/* line 1788, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-abm {
   display: none;
   -webkit-transition: all .2s ease-in-out;
@@ -1867,7 +2332,11 @@ button:focus {
   transition: all .2s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 /* line 1787, ../sass/styles.scss */
+=======
+/* line 1797, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-open {
   display: inline;
   width: 474px;
@@ -1878,7 +2347,11 @@ button:focus {
   transition: all .2s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 /* line 1799, ../sass/styles.scss */
+=======
+/* line 1809, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .detalle-container h3 {
   color: #79996D;
   margin-bottom: 2px;
@@ -1886,46 +2359,74 @@ button:focus {
   text-transform: uppercase;
   font-size: 30px;
 }
+<<<<<<< Updated upstream
 /* line 1806, ../sass/styles.scss */
+=======
+/* line 1816, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .detalle-container .nombre-producto-form {
   margin-top: 3px;
   margin-bottom: 18px;
   font-size: 20px;
 }
 
+<<<<<<< Updated upstream
 /* line 1815, ../sass/styles.scss */
+=======
+/* line 1825, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ol, ul {
   list-style: none;
 }
 
+<<<<<<< Updated upstream
 /* line 1819, ../sass/styles.scss */
+=======
+/* line 1829, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .list {
   margin: .5rem;
 }
 
+<<<<<<< Updated upstream
 /* line 1823, ../sass/styles.scss */
+=======
+/* line 1833, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .list__item {
   margin: 0 0 .5rem 0;
   padding: 0;
 }
 
+<<<<<<< Updated upstream
 /* line 1828, ../sass/styles.scss */
+=======
+/* line 1838, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .label--checkbox,
 .label--radio {
   position: relative;
   margin: .5rem;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", 'sans-serif';
   line-height: 135%;
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 1837, ../sass/styles.scss */
+=======
+/* line 1847, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .checkbox {
   position: relative;
   margin: 0 1rem 0 0;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 /* line 1842, ../sass/styles.scss */
+=======
+/* line 1852, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .checkbox:before {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1939,7 +2440,11 @@ ol, ul {
   height: 0.85rem;
   border: 2px solid #f2f2f2;
 }
+<<<<<<< Updated upstream
 /* line 1856, ../sass/styles.scss */
+=======
+/* line 1866, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .checkbox:checked:before {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -1950,7 +2455,11 @@ ol, ul {
   border-top-style: none;
   border-right-style: none;
 }
+<<<<<<< Updated upstream
 /* line 1865, ../sass/styles.scss */
+=======
+/* line 1875, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .checkbox:after {
   content: "";
   position: absolute;
@@ -1962,13 +2471,21 @@ ol, ul {
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 1877, ../sass/styles.scss */
+=======
+/* line 1887, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .radio {
   position: relative;
   margin: 0 1rem 0 0;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
 /* line 1881, ../sass/styles.scss */
+=======
+/* line 1891, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .radio:before {
   -moz-transition: -moz-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
   -o-transition: -o-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
@@ -1988,14 +2505,22 @@ ol, ul {
   background: #16a085;
   border-radius: 50%;
 }
+<<<<<<< Updated upstream
 /* line 1896, ../sass/styles.scss */
+=======
+/* line 1906, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .radio:checked:before {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
+<<<<<<< Updated upstream
 /* line 1901, ../sass/styles.scss */
+=======
+/* line 1911, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .radio:after {
   content: "";
   position: absolute;
@@ -2008,7 +2533,11 @@ ol, ul {
   border-radius: 50%;
 }
 
+<<<<<<< Updated upstream
 /* line 1914, ../sass/styles.scss */
+=======
+/* line 1924, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .button--round {
   -moz-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
@@ -2023,18 +2552,30 @@ ol, ul {
   text-decoration: none;
   text-align: center;
 }
+<<<<<<< Updated upstream
 /* line 1924, ../sass/styles.scss */
+=======
+/* line 1934, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .button--round i {
   font-size: 1rem;
   line-height: 220%;
   vertical-align: middle;
 }
+<<<<<<< Updated upstream
 /* line 1930, ../sass/styles.scss */
+=======
+/* line 1940, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .button--round:hover {
   background: #3b50ce;
 }
 
+<<<<<<< Updated upstream
 /* line 1935, ../sass/styles.scss */
+=======
+/* line 1945, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .button--sticky {
   position: fixed;
   right: 2rem;
@@ -2061,7 +2602,11 @@ ol, ul {
     transform: translateY(0);
   }
 }
+<<<<<<< Updated upstream
 /* line 1977, ../sass/styles.scss */
+=======
+/* line 1987, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge {
   list-style-type: none;
   /*remove the bullet point*/
@@ -2069,7 +2614,11 @@ ul.enlarge {
   background-color: transparent;
 }
 
+<<<<<<< Updated upstream
 /* line 1982, ../sass/styles.scss */
+=======
+/* line 1992, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge li {
   display: inline-block;
   /*places the images in a line*/
@@ -2078,12 +2627,20 @@ ul.enlarge li {
   /*resets the stack order of the list items - later we'll increase this*/
 }
 
+<<<<<<< Updated upstream
 /* line 1988, ../sass/styles.scss */
+=======
+/* line 1998, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge img {
   background-color: #eae9d4;
 }
 
+<<<<<<< Updated upstream
 /* line 1998, ../sass/styles.scss */
+=======
+/* line 2008, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge span {
   position: absolute;
   left: -9999px;
@@ -2101,13 +2658,21 @@ ul.enlarge span {
   border-radius: 8px;
 }
 
+<<<<<<< Updated upstream
 /* line 2014, ../sass/styles.scss */
+=======
+/* line 2024, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge li:hover {
   z-index: 50;
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 2018, ../sass/styles.scss */
+=======
+/* line 2028, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge span img {
   padding: 2px;
   background: #ccc;
@@ -2115,46 +2680,78 @@ ul.enlarge span img {
   width: 250px !important;
 }
 
+<<<<<<< Updated upstream
 /* line 2024, ../sass/styles.scss */
+=======
+/* line 2034, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge li:hover span {
   top: -300px;
   left: -120px;
 }
 
+<<<<<<< Updated upstream
 /* line 2030, ../sass/styles.scss */
+=======
+/* line 2040, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge li:hover:nth-child(2) span {
   left: -100px;
 }
 
+<<<<<<< Updated upstream
 /* line 2033, ../sass/styles.scss */
+=======
+/* line 2043, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge li:hover:nth-child(3) span {
   left: -200px;
 }
 
 /**IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+<<<<<<< Updated upstream
 /* line 2037, ../sass/styles.scss */
+=======
+/* line 2047, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul.enlarge img, ul.enlarge span {
   behavior: url(pie/PIE.htc);
 }
 
+<<<<<<< Updated upstream
 /* line 2041, ../sass/styles.scss */
+=======
+/* line 2051, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-group {
   display: flex;
 }
 @media (max-width: 360px) {
+<<<<<<< Updated upstream
   /* line 2041, ../sass/styles.scss */
+=======
+  /* line 2051, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .mv-group {
     flex-direction: column;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 2048, ../sass/styles.scss */
+=======
+/* line 2058, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .loader-img2 {
   width: 20% px;
   margin: 10px auto;
 }
 
+<<<<<<< Updated upstream
 /* line 2055, ../sass/styles.scss */
+=======
+/* line 2065, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .menu-mobile-btn-contenedor {
   text-align: center;
   width: 100%;
@@ -2162,7 +2759,11 @@ ul.enlarge img, ul.enlarge span {
   vertical-align: middle;
 }
 
+<<<<<<< Updated upstream
 /* line 2062, ../sass/styles.scss */
+=======
+/* line 2072, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .contenedor-logo-back {
   text-align: center;
   padding-top: 150px;
@@ -2170,23 +2771,39 @@ ul.enlarge img, ul.enlarge span {
   height: 100%;
 }
 
+<<<<<<< Updated upstream
 /* line 2069, ../sass/styles.scss */
+=======
+/* line 2079, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .loader-img-2 {
   width: 200px;
   left: calc(50% - 100px);
 }
 
+<<<<<<< Updated upstream
 /* line 2074, ../sass/styles.scss */
+=======
+/* line 2084, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .buscador-container {
   width: calc(100% - 40px);
 }
 
+<<<<<<< Updated upstream
 /* line 2077, ../sass/styles.scss */
+=======
+/* line 2087, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .margin-top {
   margin-top: 10px;
 }
 
+<<<<<<< Updated upstream
 /* line 2080, ../sass/styles.scss */
+=======
+/* line 2090, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-flex {
   display: flex;
   flex-direction: row;
@@ -2194,18 +2811,30 @@ ul.enlarge img, ul.enlarge span {
   align-items: center;
 }
 
+<<<<<<< Updated upstream
 /* line 2086, ../sass/styles.scss */
+=======
+/* line 2096, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-container-wrapper {
   width: 70%;
 }
 @media (max-width: 780px) {
+<<<<<<< Updated upstream
   /* line 2086, ../sass/styles.scss */
+=======
+  /* line 2096, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .form-container-wrapper {
     width: 100%;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 2092, ../sass/styles.scss */
+=======
+/* line 2102, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .form-flex {
   display: flex;
   flex-direction: row;
@@ -2213,18 +2842,30 @@ ul.enlarge img, ul.enlarge span {
   align-items: center;
 }
 @media (max-width: 600px) {
+<<<<<<< Updated upstream
   /* line 2092, ../sass/styles.scss */
+=======
+  /* line 2102, ../sass/styles.scss */
+>>>>>>> Stashed changes
   .form-flex {
     flex-direction: column;
   }
 }
 
+<<<<<<< Updated upstream
 /* line 2103, ../sass/styles.scss */
+=======
+/* line 2113, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-autocomplete {
   display: inherit;
 }
 
+<<<<<<< Updated upstream
 /* line 2106, ../sass/styles.scss */
+=======
+/* line 2116, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-autocomplete:focus {
   border: solid 1px #446600;
   color: red;
@@ -2236,7 +2877,11 @@ mv-autocomplete:focus {
   animation: all ease-in .4;
 }
 
+<<<<<<< Updated upstream
 /* line 2117, ../sass/styles.scss */
+=======
+/* line 2127, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-waiting #mv-waiting {
   position: fixed;
   background-color: rgba(59, 70, 70, 0.9);
@@ -2248,7 +2893,11 @@ mv-waiting #mv-waiting {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< Updated upstream
 /* line 2128, ../sass/styles.scss */
+=======
+/* line 2138, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-waiting #mv-waiting span {
   font-weight: bolder;
   color: white;
@@ -2260,18 +2909,30 @@ mv-waiting #mv-waiting span {
   animation: pulse 1.5s infinite;
 }
 
+<<<<<<< Updated upstream
 /* line 2141, ../sass/styles.scss */
+=======
+/* line 2151, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-autocomplete {
   position: relative;
 }
 
+<<<<<<< Updated upstream
 /* line 2145, ../sass/styles.scss */
+=======
+/* line 2155, ../sass/styles.scss */
+>>>>>>> Stashed changes
 mv-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* line 2153, ../sass/styles.scss */
+=======
+/* line 2163, ../sass/styles.scss */
+>>>>>>> Stashed changes
 ul {
   margin: 0;
   padding: 0;
@@ -2279,7 +2940,11 @@ ul {
   background-color: #536363;
 }
 
+<<<<<<< Updated upstream
 /* line 2160, ../sass/styles.scss */
+=======
+/* line 2170, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -2293,7 +2958,11 @@ ul {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+<<<<<<< Updated upstream
 /* line 2175, ../sass/styles.scss */
+=======
+/* line 2185, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .mv-autocomplete-selected {
   color: black;
   background: #a4b357;
@@ -2306,7 +2975,11 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
 }
 
+<<<<<<< Updated upstream
 /* line 2188, ../sass/styles.scss */
+=======
+/* line 2198, ../sass/styles.scss */
+>>>>>>> Stashed changes
 form.form {
   z-index: 1000;
   position: fixed;
@@ -2322,25 +2995,41 @@ form.form {
   background-image: linear-gradient(-180deg, #eeeeee 0%, #d8d8d8 100%);
 }
 
+<<<<<<< Updated upstream
 /* line 2205, ../sass/styles.scss */
+=======
+/* line 2215, ../sass/styles.scss */
+>>>>>>> Stashed changes
 abrir-cerrar-caja h3 {
   color: #a4b357;
   font-size: 25px;
   margin-bottom: 20px;
 }
 
+<<<<<<< Updated upstream
 /* line 2211, ../sass/styles.scss */
+=======
+/* line 2221, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .detalle-container-login {
   color: black;
   font-weight: bold;
 }
 
+<<<<<<< Updated upstream
 /* line 2216, ../sass/styles.scss */
+=======
+/* line 2226, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .input input, .input select {
   margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 /* line 2219, ../sass/styles.scss */
+=======
+/* line 2229, ../sass/styles.scss */
+>>>>>>> Stashed changes
 .readonly {
   background-color: #79996d !important;
   color: white !important;
