@@ -39,7 +39,7 @@ body {
   //padding: 50px!important;
   //padding: 5px 10px;
   margin: 0;
-  //min-height: 2500px; //NO SE QUIEN PUSO ESTE TAMAÑO
+  //min-height: 2500px; //NO SE QUIEN PUSO ESTE TAMAO
   background-color: #e5e5e5;
 }
 
@@ -938,6 +938,7 @@ input.buscador{
   background: url(images/lupa.svg) no-repeat #D8D8D8 scroll 0px 0px;
   padding-left:40px;
   color:#000;
+  width: calc(100% - 15px)!important;
 }
 
 .titulo-imagen{
@@ -2214,7 +2215,7 @@ abrir-cerrar-caja h3{
 }
 
 .input input, .input select{
-  margin-top: 5px;
+  margin: 2px;
 }
 .readonly {
   background-color: #79996d !important;
