@@ -1728,7 +1728,7 @@ button:focus {
   display: flex;
   /* flex-direction: column; */
   justify-content: flex-end;
-  width: 60%;
+  width: 77%;
   align-items: center;
 }
 /* line 1641, ../sass/styles.scss */
@@ -1825,8 +1825,8 @@ button:focus {
 /* line 1740, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right .sub-menu {
   font-family: "Roboto", 'sans-serif';
-  font-size: 1vw;
-  line-height: 3vh;
+  font-size: .8vw;
+  line-height: 2vh;
 }
 
 /* line 1750, ../sass/styles.scss */
