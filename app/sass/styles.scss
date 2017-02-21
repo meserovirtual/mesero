@@ -583,6 +583,7 @@ http://jsfiddle.net/BumU5/3/
   height:0;
 }
 [data-tip]:after {
+  font-family: "Roboto-Bold", 'sans-serif';
   display:none;
   content:attr(data-tip);
   position:absolute;
@@ -590,8 +591,9 @@ http://jsfiddle.net/BumU5/3/
   left:0px;
   padding:5px 8px;
   //background:#79996D;
-  background: #d8c823;
-  color:#fff;
+  background: darkred;
+  color:white;
+  font-weight: bolder;
   z-index:9;
   font-size: 0.75em;
   height:18px;
@@ -602,7 +604,11 @@ http://jsfiddle.net/BumU5/3/
   white-space:nowrap;
   word-wrap:normal;
   width: 210px;
-  margin: 5px 3px;
+  margin: 5px 5px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 [data-tip]:hover:before,
 [data-tip]:hover:after {
@@ -615,6 +621,7 @@ label{
   opacity: 1;
   max-width: 100%;
   margin-bottom: 5px;
+  margin-top: 15px;
   padding: 2px;
 }
 
@@ -705,20 +712,25 @@ table{
 
 
 
-.table-td{
+tfoot td{
   //* Rectangle 3 Copy 28: */
   background: #536363;
   padding: 0px;
   //Agregado por Mateo
-  display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+tfoot td:hover{
+  -webkit-transition: none!important;
+
+
+}
+
 
 .paginacion-primera, .paginacion-sig, .paginacion-ultima, .paginacion-ant{
-  width: 26px;
-  height: 24px;
+  width: 52px;
+  height: 48px;
   border-style: none;
   background: url("../images/paginacion-primera.svg") no-repeat scroll 0 0 transparent;
 }
@@ -2093,6 +2105,7 @@ ul.enlarge img, ul.enlarge span{
 }
 .form-flex-around{
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 .form-container-wrapper{
   width: 70%;
