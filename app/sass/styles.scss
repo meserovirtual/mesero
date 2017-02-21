@@ -2084,11 +2084,15 @@ ul.enlarge img, ul.enlarge span{
 .margin-top {
   margin-top: 10px;
 }
-.form-flex{
+.form-flex-around,
+.form-flex-between,
+.form-flex-center {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+}
+.form-flex-around{
+  justify-content: space-around;
 }
 .form-container-wrapper{
   width: 70%;
@@ -2096,17 +2100,17 @@ ul.enlarge img, ul.enlarge span{
     width: 100%;
   }
 }
-.form-flex{
-  display: flex;
-  flex-direction: row;
+.form-flex-between{
   justify-content: space-between;
-  align-items: center;
 
   @media (max-width: 600px) {
     flex-direction: column;
   }
-
 }
+.form-flex-center {
+  justify-content: center;
+}
+
 mv-autocomplete {
   display: inherit;
 }
