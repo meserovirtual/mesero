@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
-/* line 5, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Users/diegob/.rvm/gems/ruby-head/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1315,7 +1315,7 @@ button:focus {
   height: 50px;
   background-color: #505050;
   position: fixed;
-  top: 50px;
+  top: 100px;
   z-index: 1000;
 }
 @media (min-width: 800px) {
@@ -1329,7 +1329,7 @@ button:focus {
   }
 }
 
-/* line 1239, ../sass/styles.scss */
+/* line 1240, ../sass/styles.scss */
 .menu-icon {
   width: 45px;
   height: 45px;
@@ -1339,13 +1339,13 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 1248, ../sass/styles.scss */
+/* line 1249, ../sass/styles.scss */
 .menu-icon:hover, .menu-icon2:hover {
   -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
   cursor: pointer;
 }
 
-/* line 1254, ../sass/styles.scss */
+/* line 1255, ../sass/styles.scss */
 .menu-icon2 {
   width: 39px;
   height: 90px;
@@ -1357,7 +1357,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 1265, ../sass/styles.scss */
+/* line 1266, ../sass/styles.scss */
 .menu-icon-mobile {
   width: 125px;
   height: 140px;
@@ -1369,18 +1369,18 @@ button:focus {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 1277, ../sass/styles.scss */
+/* line 1278, ../sass/styles.scss */
 .login-panel-form .botonera {
   margin-bottom: 10px !important;
 }
 
-/* line 1280, ../sass/styles.scss */
+/* line 1281, ../sass/styles.scss */
 .botonera {
   text-align: center;
   margin-top: 10px;
 }
 
-/* line 1285, ../sass/styles.scss */
+/* line 1286, ../sass/styles.scss */
 .nav-button {
   flex: 1;
   margin-top: 15px;
@@ -1393,7 +1393,7 @@ button:focus {
   transform-origin: 13px 13px;
   transform-style: preserve-3D;
 }
-/* line 1297, ../sass/styles.scss */
+/* line 1298, ../sass/styles.scss */
 .nav-button div {
   cursor: pointer;
   width: 25px;
@@ -1407,7 +1407,7 @@ button:focus {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 1311, ../sass/styles.scss */
+/* line 1312, ../sass/styles.scss */
 .nav-button .nav-button-top-transformed {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1415,7 +1415,7 @@ button:focus {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 1318, ../sass/styles.scss */
+/* line 1319, ../sass/styles.scss */
 .nav-button .nav-button-mid-transformed {
   -webkit-transform: translate(-3px, 0px);
   -moz-transform: translate(-3px, 0px);
@@ -1423,7 +1423,7 @@ button:focus {
   -o-transform: translate(-3px, 0px);
   transform: translate(-3px, 0px);
 }
-/* line 1325, ../sass/styles.scss */
+/* line 1326, ../sass/styles.scss */
 .nav-button .nav-button-bot-transformed {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1456,13 +1456,13 @@ button:focus {
     opacity: 1;
   }
 }
-/* line 1361, ../sass/styles.scss */
+/* line 1362, ../sass/styles.scss */
 .menu-mobile {
   display: flex;
   height: 100%;
   z-index: 100;
 }
-/* line 1366, ../sass/styles.scss */
+/* line 1367, ../sass/styles.scss */
 .menu-mobile .header-separator {
   height: 40px;
   margin-top: 5px;
@@ -1470,7 +1470,7 @@ button:focus {
   margin-left: 40px;
   background-color: white;
 }
-/* line 1374, ../sass/styles.scss */
+/* line 1375, ../sass/styles.scss */
 .menu-mobile .logo {
   flex: 5;
   padding: 5px;
@@ -1479,7 +1479,7 @@ button:focus {
   margin-top: 6px;
 }
 
-/* line 1383, ../sass/styles.scss */
+/* line 1384, ../sass/styles.scss */
 .menu-mobile-panel {
   font-family: "Roboto", 'sans-serif';
   font-size: 14px;
@@ -1519,11 +1519,11 @@ button:focus {
   -o-transform: translate(-1000px, 0);
   transform: translate(-1000px, 0);
 }
-/* line 1411, ../sass/styles.scss */
+/* line 1412, ../sass/styles.scss */
 .menu-mobile-panel a {
   text-decoration: none;
 }
-/* line 1415, ../sass/styles.scss */
+/* line 1416, ../sass/styles.scss */
 .menu-mobile-panel .menu-desktop-btn {
   text-align: center;
   font-weight: Bold;
@@ -1544,33 +1544,33 @@ button:focus {
   animation-duration: .2s;
 }
 @media (max-width: 800px) {
-  /* line 1415, ../sass/styles.scss */
+  /* line 1416, ../sass/styles.scss */
   .menu-mobile-panel .menu-desktop-btn {
     font-size: 20px;
   }
 }
 @media (min-width: 800px) {
-  /* line 1383, ../sass/styles.scss */
+  /* line 1384, ../sass/styles.scss */
   .menu-mobile-panel {
     visibility: collapse;
     display: none;
   }
 }
 
-/* line 1456, ../sass/styles.scss */
+/* line 1457, ../sass/styles.scss */
 .sub-menu-mobile {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
-/* line 1461, ../sass/styles.scss */
+/* line 1462, ../sass/styles.scss */
 .sub-menu-mobile a {
   font-size: 16px;
   color: white;
   margin: 10px 25px;
 }
 
-/* line 1468, ../sass/styles.scss */
+/* line 1469, ../sass/styles.scss */
 .menu-mobile-panel-show {
   -webkit-transform: translate(0px, 0);
   -moz-transform: translate(0px, 0);
@@ -1579,14 +1579,14 @@ button:focus {
   transform: translate(0px, 0);
 }
 
-/* line 1476, ../sass/styles.scss */
+/* line 1477, ../sass/styles.scss */
 .menu-mobile-panel-show-add {
   -webkit-animation: menu-mobile-enter 0.4s;
   -o-animation: menu-mobile-enter 0.4s;
   animation: menu-mobile-enter 0.4s;
 }
 
-/* line 1482, ../sass/styles.scss */
+/* line 1483, ../sass/styles.scss */
 .menu-mobile-panel-show-remove {
   -webkit-animation: menu-mobile-leave 0.4s;
   -o-animation: menu-mobile-leave 0.4s;
@@ -1625,7 +1625,7 @@ button:focus {
     transform: translate(-1000px, 0);
   }
 }
-/* line 1524, ../sass/styles.scss */
+/* line 1525, ../sass/styles.scss */
 .menu-type-desktop {
   -webkit-transition: transform 0.4s ease;
   -moz-transition: transform 0.4s ease;
@@ -1634,7 +1634,7 @@ button:focus {
   transition: transform 0.4s ease;
 }
 @media (max-width: 799px) {
-  /* line 1524, ../sass/styles.scss */
+  /* line 1525, ../sass/styles.scss */
   .menu-type-desktop {
     visibility: collapse;
     display: none !important;
@@ -1642,7 +1642,7 @@ button:focus {
 }
 
 @media (min-width: 800px) {
-  /* line 1537, ../sass/styles.scss */
+  /* line 1538, ../sass/styles.scss */
   .menu-type-mobile {
     visibility: collapse;
     display: none !important;
@@ -1650,14 +1650,14 @@ button:focus {
 }
 
 @media (min-width: 800px) {
-  /* line 1544, ../sass/styles.scss */
+  /* line 1545, ../sass/styles.scss */
   .header-as-main {
     width: 100%;
     height: 100%;
     padding: 10px 0;
     text-align: justify;
   }
-  /* line 1555, ../sass/styles.scss */
+  /* line 1556, ../sass/styles.scss */
   .header-as-main #menu-desktop-logo {
     -webkit-transform: scale(5, 5);
     -moz-transform: scale(5, 5);
@@ -1668,7 +1668,7 @@ button:focus {
   }
 }
 
-/* line 1568, ../sass/styles.scss */
+/* line 1569, ../sass/styles.scss */
 #menu-mobile-logo {
   opacity: 0;
   margin-bottom: 30px;
@@ -1706,13 +1706,13 @@ button:focus {
     transform: scale(5, 5);
   }
 }
-/* line 1608, ../sass/styles.scss */
+/* line 1609, ../sass/styles.scss */
 .menu-desktop {
   display: flex;
   width: 100%;
   height: 50px;
 }
-/* line 1618, ../sass/styles.scss */
+/* line 1619, ../sass/styles.scss */
 .menu-desktop #menu-desktop-logo {
   background-color: transparent;
   margin-right: 10px;
@@ -1730,11 +1730,11 @@ button:focus {
   -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
-/* line 1642, ../sass/styles.scss */
+/* line 1643, ../sass/styles.scss */
 .menu-desktop #menu-desktop-logo:hover {
   cursor: pointer;
 }
-/* line 1646, ../sass/styles.scss */
+/* line 1647, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right {
   display: flex;
   /* flex-direction: column; */
@@ -1742,18 +1742,18 @@ button:focus {
   width: 77%;
   align-items: center;
 }
-/* line 1653, ../sass/styles.scss */
+/* line 1654, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right .sub-menu {
   font-family: "Roboto", 'sans-serif';
   font-size: 14px;
 }
-/* line 1657, ../sass/styles.scss */
+/* line 1658, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right .sub-menu a {
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
 }
-/* line 1662, ../sass/styles.scss */
+/* line 1663, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right .sub-menu a:hover {
   color: #79996D !important;
   cursor: pointer;
@@ -1763,7 +1763,7 @@ button:focus {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 1675, ../sass/styles.scss */
+/* line 1676, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left {
     /*
     #menu-desktop-upper {
@@ -1776,7 +1776,7 @@ button:focus {
       flex: 0;
     }*/
 }
-/* line 1688, ../sass/styles.scss */
+/* line 1689, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left #menu-desktop-lower {
   background-color: transparent;
   max-width: 100%;
@@ -1786,14 +1786,14 @@ button:focus {
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-/* line 1698, ../sass/styles.scss */
+/* line 1699, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left #menu-desktop-lower #menu-desktop-lower-inner {
   max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-/* line 1705, ../sass/styles.scss */
+/* line 1706, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn {
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
@@ -1814,12 +1814,12 @@ button:focus {
   -moz-animation-duration: 2s;
   animation-duration: 2s;
 }
-/* line 1730, ../sass/styles.scss */
+/* line 1731, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn-selected {
   color: bolder;
   opacity: 1;
 }
-/* line 1734, ../sass/styles.scss */
+/* line 1735, ../sass/styles.scss */
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:hover,
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:focus,
 .menu-desktop #menu-desktop-left #menu-desktop-lower .menu-desktop-btn:active {
@@ -1833,14 +1833,14 @@ button:focus {
   transition: opacity 2s ease;
 }
 
-/* line 1752, ../sass/styles.scss */
+/* line 1753, ../sass/styles.scss */
 .menu-desktop #menu-desktop-right .sub-menu {
   font-family: "Roboto", 'sans-serif';
   font-size: .8vw;
   line-height: 2vh;
 }
 
-/* line 1762, ../sass/styles.scss */
+/* line 1763, ../sass/styles.scss */
 .login {
   font-family: 'Merriweather', serif;
   font-weight: bolder;
@@ -1849,14 +1849,14 @@ button:focus {
   height: 50px;
   background-color: #eee;
   position: fixed;
-  top: 0px;
+  top: 50px;
   z-index: 1000;
   text-align: right;
   padding-top: 5px;
   padding-right: 5px;
 }
 
-/* line 1778, ../sass/styles.scss */
+/* line 1780, ../sass/styles.scss */
 .login img:hover {
   cursor: pointer;
 }
@@ -2372,4 +2372,21 @@ abrir-cerrar-caja h3 {
 .readonly {
   background-color: #79996d !important;
   color: white !important;
+}
+
+/* line 2248, ../sass/styles.scss */
+.notificaciones {
+  height: 50px;
+  background-color: #536363;
+}
+
+/* line 2252, ../sass/styles.scss */
+.notify-count {
+  width: 15px;
+  height: 15px;
+  background-color: #e42828;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
 }

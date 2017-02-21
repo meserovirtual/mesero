@@ -34,6 +34,7 @@
         'mvDeudores',
         'mvAvisos',
         'mvAvisosAdministracion',
+        'mvNotificaciones',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {

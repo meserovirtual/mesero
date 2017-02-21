@@ -1224,7 +1224,8 @@ button:focus { outline-style: none!important; }
   height: 50px;
   background-color: #505050;
   position: fixed;
-  top: 50px;
+  //top: 50px;
+  top: 100px;
   z-index: 1000;
   @media (min-width: 800px) {
     display: flex;
@@ -1767,7 +1768,8 @@ button:focus { outline-style: none!important; }
   height: 50px;
   background-color: #eee;
   position: fixed;
-  top: 0px;
+  //top: 0px;
+  top: 50px;
   z-index: 1000;
   text-align: right;
   padding-top: 5px;
@@ -1777,8 +1779,6 @@ button:focus { outline-style: none!important; }
 
 .login img:hover{
   cursor: pointer;
-
-
 }
 
 
@@ -2243,4 +2243,18 @@ abrir-cerrar-caja h3{
 .readonly {
   background-color: #79996d !important;
   color: white !important;
+}
+
+.notificaciones{
+  height: 50px;
+  background-color: #536363;
+}
+.notify-count{
+  width: 15px;
+  height: 15px;
+  background-color: #e42828;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
 }
