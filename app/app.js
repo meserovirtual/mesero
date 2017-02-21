@@ -32,6 +32,8 @@
         'mvEncomiendas',
         'mvTraslado',
         'mvDeudores',
+        'mvAvisos',
+        'mvAvisosAdministracion',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
