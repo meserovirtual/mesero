@@ -912,7 +912,7 @@ h3 {
 
   /* line 858, ../sass/styles.scss */
   .view-container {
-    margin: 130px 10px 0 10px !important;
+    margin: 180px 10px 0 10px !important;
   }
 
   /* line 862, ../sass/styles.scss */
@@ -927,7 +927,7 @@ h3 {
 }
 /* line 869, ../sass/styles.scss */
 .view-container {
-  margin: 130px 25px 0 25px;
+  margin: 180px 25px 0 25px;
 }
 
 /* line 872, ../sass/styles.scss */
@@ -2437,28 +2437,31 @@ abrir-cerrar-caja h3 {
   flex-wrap: nowrap;
   flex-direction: column;
   background-color: #536363;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-/* line 2293, ../sass/styles.scss */
+/* line 2295, ../sass/styles.scss */
 .avisos-container-2 {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
-/* line 2298, ../sass/styles.scss */
+/* line 2300, ../sass/styles.scss */
 .avisos-animation-out {
-  margin-top: -170px;
+  margin-top: -180px;
   transition: 1s;
 }
 
-/* line 2302, ../sass/styles.scss */
+/* line 2304, ../sass/styles.scss */
 .avisos-animation-in {
-  margin-top: 15px;
+  margin-top: 5px;
   transition: 1s;
 }
 
-/* line 2306, ../sass/styles.scss */
+/* line 2308, ../sass/styles.scss */
 .avisos-img {
   cursor: pointer;
+  margin-top: 10px;
 }

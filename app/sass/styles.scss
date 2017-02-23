@@ -856,7 +856,7 @@ $divider: sqrt($cells);
     padding: 0;
   }
   .view-container{
-    margin: 130px 10px 0 10px!important;
+    margin: 180px 10px 0 10px!important;
   }
 
   .form-lista{
@@ -867,7 +867,7 @@ $divider: sqrt($cells);
   }
 }
 .view-container{
-  margin: 130px 25px 0 25px;
+  margin: 180px 25px 0 25px;
 }
 .container{
   //width: 700px;
@@ -2289,6 +2289,8 @@ abrir-cerrar-caja h3{
   flex-wrap: nowrap;
   flex-direction: column;
   background-color: #536363;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .avisos-container-2{
   display: flex;
@@ -2296,13 +2298,14 @@ abrir-cerrar-caja h3{
   flex-direction: row;
 }
 .avisos-animation-out {
-  margin-top: -170px;
+  margin-top: -180px;
   transition: 1s;
 }
 .avisos-animation-in {
-  margin-top: 15px;
+  margin-top: 5px;
   transition: 1s;
 }
 .avisos-img{
   cursor: pointer;
+  margin-top: 10px;
 }
