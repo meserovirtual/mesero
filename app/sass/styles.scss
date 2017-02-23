@@ -2247,6 +2247,10 @@ abrir-cerrar-caja h3{
 
 .notificaciones{
   height: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
   background-color: #536363;
 }
 .notify-count{
@@ -2257,4 +2261,48 @@ abrir-cerrar-caja h3{
   color: #fff;
   font-size: 12px;
   text-align: center;
+}
+.avisos-margin-top{
+  margin-top: 18px;
+}
+.avisos-margin{
+  margin: 5px 10px;
+}
+.avisos-left,
+.avisos-right {
+  color:#fff;
+}
+.avisos-left {
+  width: 150px;
+}
+.avisos-right{
+  width: 570px;
+}
+.center-text{
+  text-align: center;
+}
+.font-small{
+  font-size: 13px;
+}
+.avisos-container-1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: #536363;
+}
+.avisos-container-2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.avisos-animation-out {
+  margin-top: -170px;
+  transition: 1s;
+}
+.avisos-animation-in {
+  margin-top: 15px;
+  transition: 1s;
+}
+.avisos-img{
+  cursor: pointer;
 }

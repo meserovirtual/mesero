@@ -2377,10 +2377,14 @@ abrir-cerrar-caja h3 {
 /* line 2248, ../sass/styles.scss */
 .notificaciones {
   height: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
   background-color: #536363;
 }
 
-/* line 2252, ../sass/styles.scss */
+/* line 2256, ../sass/styles.scss */
 .notify-count {
   width: 15px;
   height: 15px;
@@ -2389,4 +2393,72 @@ abrir-cerrar-caja h3 {
   color: #fff;
   font-size: 12px;
   text-align: center;
+}
+
+/* line 2265, ../sass/styles.scss */
+.avisos-margin-top {
+  margin-top: 18px;
+}
+
+/* line 2268, ../sass/styles.scss */
+.avisos-margin {
+  margin: 5px 10px;
+}
+
+/* line 2271, ../sass/styles.scss */
+.avisos-left,
+.avisos-right {
+  color: #fff;
+}
+
+/* line 2275, ../sass/styles.scss */
+.avisos-left {
+  width: 150px;
+}
+
+/* line 2278, ../sass/styles.scss */
+.avisos-right {
+  width: 570px;
+}
+
+/* line 2281, ../sass/styles.scss */
+.center-text {
+  text-align: center;
+}
+
+/* line 2284, ../sass/styles.scss */
+.font-small {
+  font-size: 13px;
+}
+
+/* line 2287, ../sass/styles.scss */
+.avisos-container-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: #536363;
+}
+
+/* line 2293, ../sass/styles.scss */
+.avisos-container-2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/* line 2298, ../sass/styles.scss */
+.avisos-animation-out {
+  margin-top: -170px;
+  transition: 1s;
+}
+
+/* line 2302, ../sass/styles.scss */
+.avisos-animation-in {
+  margin-top: 15px;
+  transition: 1s;
+}
+
+/* line 2306, ../sass/styles.scss */
+.avisos-img {
+  cursor: pointer;
 }
