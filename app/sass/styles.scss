@@ -790,7 +790,10 @@ $divider: sqrt($cells);
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-
+.btn-small {
+  height: 27px;
+  width: 27px;
+}
 .boton-cancelar, .btn-cancelar{
   background-color:#ED7161!important;
 }
