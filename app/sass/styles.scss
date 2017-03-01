@@ -2338,3 +2338,17 @@ abrir-cerrar-caja h3{
 .height-wrapper{
   min-height: 550px !important;
 }
+.table-td {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 48px;
+   align-items: center;
+ }
+.paginacion-go-to {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
