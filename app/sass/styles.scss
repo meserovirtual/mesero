@@ -944,6 +944,7 @@ $divider: sqrt($cells);
 }
 .panel-body {
   padding: 15px;
+  min-height: 150px;
   max-height: 230px;
   overflow-y: auto;
 }
@@ -2294,6 +2295,8 @@ abrir-cerrar-caja h3{
   background-color: #536363;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 200px;
+  overflow-y: auto;
 }
 .avisos-container-2{
   display: flex;
@@ -2301,7 +2304,8 @@ abrir-cerrar-caja h3{
   flex-direction: row;
 }
 .avisos-animation-out {
-  margin-top: -180px;
+  //margin-top: -180px;
+  margin-top: -245px;
   transition: 1s;
 }
 .avisos-animation-in {
@@ -2311,4 +2315,12 @@ abrir-cerrar-caja h3{
 .avisos-img{
   cursor: pointer;
   margin-top: 10px;
+}
+.show-panel{
+  display: flex !important;
+  transition: 5s;
+}
+.hide-panel{
+  display: none;
+  transition: 5s;
 }
