@@ -35,6 +35,8 @@
         'mvAvisos',
         'mvAvisosAdministracion',
         'mvNotificaciones',
+        'mvComandas',
+        'mvMonitor',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -260,6 +262,20 @@
                 }]
             }
         });
+
+
+        $routeProvider.when('/cocina/comandas', {
+            templateUrl: 'comandas/comandas.html',
+            controller: 'ComandasCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('comandas/comandas.js');
+                }]
+            }
+        });
+
 
     }]).controller('AppCtrl', AppCtrl);
 

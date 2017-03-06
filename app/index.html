@@ -440,6 +440,8 @@
                         'bower_components/mv-angular-avisos/mv-avisos.js',
                         'bower_components/mv-angular-avisos/mv-avisos-administracion.js',
                         'bower_components/mv-angular-avisos/mv-notificaciones.js',
+                        'bower_components/mv-angular-comandas/mv-comandas.js',
+                        'bower_components/mv-angular-comandas/mv-monitor.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -578,7 +580,7 @@
                        ng-click="appCtrl.menu = 'pago'">
                         <img src="images/logo6.svg" class="menu-icon">
                     </a>
-                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Cocina"
+                    <a class="menu-desktop-btn ac-ripple" href="#!/cocina/comandas" title="Cocina"
                        ng-click="appCtrl.menu = 'cocina'">
                         <img src="images/logo7.svg" class="menu-icon">
                     </a>
@@ -629,6 +631,10 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
                 <a href="#!/settings/avisos" ng-click="appCtrl.sub_menu = 'avisos'"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'avisos'}">Avisos</a>
+            </div>
+            <div ng-if="appCtrl.menu =='cocina'" class="sub-menu">
+                <a href="#!/cocina/comandas" ng-click="appCtrl.sub_menu = 'comandas'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'comandas'}">Comandas</a>
             </div>
         </div>
     </div>

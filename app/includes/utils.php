@@ -174,6 +174,14 @@ class Main
             'create' => -1,
             'update' => -1,
             'remove' => -1
+        ),
+        'Comandas' => array(
+            'getComanda' => -1,
+            'getComandas' => -1,
+            'createComanda' => -1,
+            'createDetalle' => -1,
+            'createExtra' => -1,
+            'updateComanda' => -1
         )
     );
 
