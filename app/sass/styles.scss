@@ -2229,6 +2229,9 @@ ul.enlarge img, ul.enlarge span{
 .form-flex-center {
   justify-content: center;
   padding-top: 4px;
+  max-width: 1000px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 mv-autocomplete {
@@ -2460,9 +2463,7 @@ abrir-cerrar-caja h3{
 .input-xlarge{
   width: 100% !important;
 }
-.input-small{
-  width: 100px !important;
-}
+
 .height-wrapper{
   min-height: 550px !important;
 }
