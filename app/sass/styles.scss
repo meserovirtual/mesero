@@ -2428,8 +2428,10 @@ abrir-cerrar-caja h3{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 200px;
-  padding-top: 77px;
+  padding-top: 86px;
   overflow-y: auto;
+  max-width: 1000px;
+  margin: auto;
 }
 .avisos-container-2{
   background-color: white;
