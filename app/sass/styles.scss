@@ -909,6 +909,48 @@ $divider: sqrt($cells);
 .container-form {
   width: calc(100% - 40px);
 }
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.container-comanda{
+  margin: 5px;
+  width: 280px;
+}
+.container-comanda-header{
+  background-color: #505050;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.container-comanda-body{
+  background-color: #536363;
+  padding: 5px;
+  color:#fff;
+}
+.comanda-body-header{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 5px 0;
+  padding: 5px 0px;
+}
+.comanda-body-detalle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.container-comanda-footer{
+  background-color: #eee;
+  padding: 5px;
+}
 
 .primary{
   background-color: #00CE5D;
