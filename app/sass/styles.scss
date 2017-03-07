@@ -203,10 +203,10 @@ section{
 form{
   text-align: -webkit-center;
   //background: #293333;
-  border-radius: 5px;
+  border-radius: 10px;
   min-height: 200px;
   color: white;
-  padding: 20px;
+  padding: 10px;
   /* Rectangle 4 Copy: */
   background: #4A4A4A;
   border: 1px solid #979797;
@@ -444,8 +444,9 @@ small {
 
 
 h2{
+  text-align: -webkit-left;
+  font-size: 20px;
   font-family: "Roboto", 'sans-serif';
-  /* Rectangle 3 Copy 31: */
   background: #79996D;
   border-radius: 5px;
   color: white;
@@ -669,11 +670,13 @@ table{
     color: white;
     font-weight: bold;
     max-width: 160px;
+
+
   }
 
   td{
     text-align: center;
-    padding: 4px 10px;
+    padding: 5px 10px;
     border-spacing: 1px;
   }
 
@@ -687,6 +690,7 @@ table{
     color: white;
     font-weight: lighter;
     max-width: 160px;
+
   }
 
   tr:hover{
@@ -726,6 +730,11 @@ tfoot td:hover{
 
 
 }
+
+
+
+
+
 
 
 .paginacion-primera, .paginacion-sig, .paginacion-ultima, .paginacion-ant{
@@ -960,6 +969,7 @@ input.buscador{
   padding-left:40px;
   color:#000;
   width: calc(100% - 15px)!important;
+  margin-bottom: 20px!important;
 }
 
 .titulo-imagen{
@@ -1290,6 +1300,7 @@ button:focus { outline-style: none!important; }
 .botonera{
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-button {
@@ -1801,7 +1812,7 @@ button:focus { outline-style: none!important; }
 }
 .form-lista{
   width: 77%;
-  margin: 0 10px;
+  margin: 0 20px 0 0;
 }
 .form-abm{
   display: none;
@@ -1857,7 +1868,7 @@ ol, ul {
 .label--radio{
   position: relative;
   margin: .5rem;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", 'sans-serif';
   line-height: 135%;
   cursor: pointer;
 }
@@ -2073,11 +2084,6 @@ ul.enlarge img, ul.enlarge span{
   }
 }
 
-.loader-img2{
-  width: 20%px;
-  margin: 10px auto;
-
-}
 
 
 .menu-mobile-btn-contenedor{
@@ -2095,8 +2101,9 @@ ul.enlarge img, ul.enlarge span{
 }
 
 .loader-img-2{
+  position: relative;
   width: 200px;
-  left: calc(50% - 100px);
+  margin-top: 25vh;
 }
 
 .buscador-container{
@@ -2384,4 +2391,73 @@ abrir-cerrar-caja h3{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+
+///////////////////
+@keyframes loader {
+  50% {
+    filter: blur(5px);
+    transform: translateY(-10px);
+    opacity: 0.3;
+  }
+}
+
+.contenedor-loader{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+  background: #eeeeee; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  top: 0;
+  left: 0;
+  z-index: 15000;
+  text-align: -webkit-center;
+  h3{
+    padding: 10px;
+    font-size: 1.5em;
+  }
+}
+
+.loader {
+  width: 100px;
+  height: 15px;
+  margin: -7px auto 0 auto;
+  position: relative;
+  top: 5vh;
+}
+
+.loader > div {
+  height: 15px;
+  width: 15px;
+  background-color: #5A6D65;
+  float: left;
+  margin: 0 5px 0 0;
+  animation: loader 0.7s infinite;
+  opacity: 0.5;
+  border-radius: 25%;
+}
+
+.loader > div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader > div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader > div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader > div:nth-child(5) {
+  animation-delay: 0.5s;
 }
