@@ -5,6 +5,16 @@ $clr_control_primary: #00CE5D;
 $color2: #77b300;
 $color3: #446600;
 
+$primary-color-dark:   #00796B;
+$primary-color:        #009688;
+$primary-color-light:  #B2DFDB;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #8BC34A;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+
 //@import "bourbon";
 @import "compass";
 @import "compass/reset";
@@ -735,31 +745,50 @@ tfoot td:hover{
 }
 
 
-
-
-
-
-
-.paginacion-primera, .paginacion-sig, .paginacion-ultima, .paginacion-ant{
-  width: 52px;
-  height: 48px;
+/*
+.paginacion-primera,
+.paginacion-sig,
+.paginacion-ultima,
+.paginacion-ant,
+.delivery-paginacion-primera,
+.delivery-paginacion-sig,
+.delivery-paginacion-ultima,
+.delivery-paginacion-ant {
   border-style: none;
   background: url("../images/paginacion-primera.svg") no-repeat scroll 0 0 transparent;
 }
-
-.paginacion-sig{
+*/
+.paginacion-primera,
+.paginacion-sig,
+.paginacion-ultima,
+.paginacion-ant {
+  width: 52px;
+  height: 48px;
+  border-style: none;
+}
+.delivery-paginacion-primera,
+.delivery-paginacion-sig,
+.delivery-paginacion-ultima,
+.delivery-paginacion-ant {
+  width: 35px;
+  height: 30px;
+  border-style: none;
+}
+.paginacion-primera,
+.delivery-paginacion-primera {
+  background: url("../images/paginacion-primera.svg") no-repeat scroll 0 0 transparent;
+}
+.paginacion-sig,
+.delivery-paginacion-sig {
   background: url("../images/paginacion-sig.svg") no-repeat scroll 0 0 transparent;
-
 }
-
-.paginacion-ultima{
+.paginacion-ultima,
+.delivery-paginacion-ultima {
   background: url("../images/paginacion-ultima.svg") no-repeat scroll 0 0 transparent;
-
 }
-
-.paginacion-ant{
+.paginacion-ant,
+.delivery-paginacion-ant {
   background: url("../images/paginacion-ant.svg") no-repeat scroll 0 0 transparent;
-
 }
 
 ////// HEAD
@@ -2556,3 +2585,14 @@ abrir-cerrar-caja h3{
   animation-delay: 0.5s;
 }
 
+hr.primary-line {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #00CE5D;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.margin-top-small {
+  margin-top: 5px;
+}
