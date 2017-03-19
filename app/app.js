@@ -37,6 +37,7 @@
         'mvNotificaciones',
         'mvComandas',
         'mvMonitor',
+        'mvEnvios',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
