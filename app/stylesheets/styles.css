@@ -2806,3 +2806,18 @@ hr.primary-line {
 .margin-top-small {
   margin-top: 5px;
 }
+
+/* line 2599, ../sass/styles.scss */
+.comanda-status-0 {
+  background-color: red;
+}
+
+/* line 2602, ../sass/styles.scss */
+.comanda-status-1 {
+  background-color: yellow;
+}
+
+/* line 2605, ../sass/styles.scss */
+.comanda-status-2 {
+  background-color: green;
+}
