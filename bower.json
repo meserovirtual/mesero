@@ -24,6 +24,7 @@
     "mv-angular-movimientos": "*",
     "mv-angular-productos": "*",
     "mv-angular-stocks": "*",
-    "mv-angular-contacts": "*"
+    "mv-angular-contacts": "*",
+    "mv-angular-comandas": "*"
   }
 }
