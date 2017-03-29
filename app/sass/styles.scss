@@ -2436,15 +2436,16 @@ abrir-cerrar-caja h3{
 }
 .avisos-left,
 .avisos-right {
-  color:black;
+  //color:black;
   font-size: 16px;
-
+  color:#fff;
 }
 .avisos-left {
-  width: 100px;
+  width: 150px;
 }
 .avisos-right{
-  width: 600px;
+  //width: 600px;
+  width: 100%;
 }
 .center-text{
   text-align: center;
@@ -2466,7 +2467,7 @@ abrir-cerrar-caja h3{
   margin: auto;
 }
 .avisos-container-2{
-  background-color: white;
+  //background-color: white;
   padding: 5px;
   display: flex;
   flex-wrap: nowrap;
@@ -2474,7 +2475,8 @@ abrir-cerrar-caja h3{
 }
 .avisos-animation-out {
   //margin-top: -180px;
-  margin-top: -245px;
+  //margin-top: -245px;
+  margin-top: -286px;
   transition: 1s;
 }
 .avisos-animation-in {

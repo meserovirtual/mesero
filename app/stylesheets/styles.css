@@ -2606,31 +2606,31 @@ abrir-cerrar-caja h3 {
 /* line 2437, ../sass/styles.scss */
 .avisos-left,
 .avisos-right {
-  color: black;
   font-size: 16px;
+  color: #fff;
 }
 
 /* line 2443, ../sass/styles.scss */
 .avisos-left {
-  width: 100px;
+  width: 150px;
 }
 
 /* line 2446, ../sass/styles.scss */
 .avisos-right {
-  width: 600px;
+  width: 100%;
 }
 
-/* line 2449, ../sass/styles.scss */
+/* line 2450, ../sass/styles.scss */
 .center-text {
   text-align: center;
 }
 
-/* line 2452, ../sass/styles.scss */
+/* line 2453, ../sass/styles.scss */
 .font-small {
   font-size: 13px;
 }
 
-/* line 2455, ../sass/styles.scss */
+/* line 2456, ../sass/styles.scss */
 .avisos-container-1 {
   display: flex;
   flex-wrap: nowrap;
@@ -2645,57 +2645,56 @@ abrir-cerrar-caja h3 {
   margin: auto;
 }
 
-/* line 2468, ../sass/styles.scss */
+/* line 2469, ../sass/styles.scss */
 .avisos-container-2 {
-  background-color: white;
   padding: 5px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
-/* line 2475, ../sass/styles.scss */
+/* line 2476, ../sass/styles.scss */
 .avisos-animation-out {
-  margin-top: -245px;
+  margin-top: -286px;
   transition: 1s;
 }
 
-/* line 2480, ../sass/styles.scss */
+/* line 2482, ../sass/styles.scss */
 .avisos-animation-in {
   margin-top: 0px;
   transition: 1s;
 }
 
-/* line 2484, ../sass/styles.scss */
+/* line 2486, ../sass/styles.scss */
 .avisos-img {
   cursor: pointer;
   margin-top: -5px;
   margin: auto;
 }
 
-/* line 2489, ../sass/styles.scss */
+/* line 2491, ../sass/styles.scss */
 .show-panel {
   display: flex !important;
   transition: 5s;
 }
 
-/* line 2493, ../sass/styles.scss */
+/* line 2495, ../sass/styles.scss */
 .hide-panel {
   display: none;
   transition: 5s;
 }
 
-/* line 2497, ../sass/styles.scss */
+/* line 2499, ../sass/styles.scss */
 .input-xlarge {
   width: 100% !important;
 }
 
-/* line 2501, ../sass/styles.scss */
+/* line 2503, ../sass/styles.scss */
 .height-wrapper {
   min-height: 550px !important;
 }
 
-/* line 2504, ../sass/styles.scss */
+/* line 2506, ../sass/styles.scss */
 .table-td {
   display: flex;
   flex-direction: row;
@@ -2704,7 +2703,7 @@ abrir-cerrar-caja h3 {
   align-items: center;
 }
 
-/* line 2511, ../sass/styles.scss */
+/* line 2513, ../sass/styles.scss */
 .paginacion-go-to {
   width: 250px;
   display: flex;
@@ -2720,7 +2719,7 @@ abrir-cerrar-caja h3 {
     opacity: 0.3;
   }
 }
-/* line 2529, ../sass/styles.scss */
+/* line 2531, ../sass/styles.scss */
 .contenedor-loader {
   position: absolute;
   width: 100%;
@@ -2741,13 +2740,13 @@ abrir-cerrar-caja h3 {
   z-index: 15000;
   text-align: -webkit-center;
 }
-/* line 2543, ../sass/styles.scss */
+/* line 2545, ../sass/styles.scss */
 .contenedor-loader h3 {
   padding: 10px;
   font-size: 1.5em;
 }
 
-/* line 2549, ../sass/styles.scss */
+/* line 2551, ../sass/styles.scss */
 .loader {
   width: 100px;
   height: 15px;
@@ -2756,7 +2755,7 @@ abrir-cerrar-caja h3 {
   top: 5vh;
 }
 
-/* line 2557, ../sass/styles.scss */
+/* line 2559, ../sass/styles.scss */
 .loader > div {
   height: 15px;
   width: 15px;
@@ -2768,32 +2767,32 @@ abrir-cerrar-caja h3 {
   border-radius: 25%;
 }
 
-/* line 2568, ../sass/styles.scss */
+/* line 2570, ../sass/styles.scss */
 .loader > div:nth-child(1) {
   animation-delay: 0.1s;
 }
 
-/* line 2572, ../sass/styles.scss */
+/* line 2574, ../sass/styles.scss */
 .loader > div:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-/* line 2576, ../sass/styles.scss */
+/* line 2578, ../sass/styles.scss */
 .loader > div:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-/* line 2580, ../sass/styles.scss */
+/* line 2582, ../sass/styles.scss */
 .loader > div:nth-child(4) {
   animation-delay: 0.4s;
 }
 
-/* line 2584, ../sass/styles.scss */
+/* line 2586, ../sass/styles.scss */
 .loader > div:nth-child(5) {
   animation-delay: 0.5s;
 }
 
-/* line 2588, ../sass/styles.scss */
+/* line 2590, ../sass/styles.scss */
 hr.primary-line {
   height: 1px;
   border: 0;
@@ -2802,22 +2801,22 @@ hr.primary-line {
   padding: 0;
 }
 
-/* line 2596, ../sass/styles.scss */
+/* line 2598, ../sass/styles.scss */
 .margin-top-small {
   margin-top: 5px;
 }
 
-/* line 2599, ../sass/styles.scss */
+/* line 2601, ../sass/styles.scss */
 .comanda-status-0 {
   background-color: red;
 }
 
-/* line 2602, ../sass/styles.scss */
+/* line 2604, ../sass/styles.scss */
 .comanda-status-1 {
   background-color: yellow;
 }
 
-/* line 2605, ../sass/styles.scss */
+/* line 2607, ../sass/styles.scss */
 .comanda-status-2 {
   background-color: green;
 }
