@@ -38,6 +38,8 @@
         'mvComandas',
         'mvMonitor',
         'mvEnvios',
+        'mvMesas',
+        'mvMesasAdministracion',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -223,6 +225,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('avisos/avisos.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/settings/salon', {
+            templateUrl: 'salon/salon.html',
+            controller: 'SalonCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('salon/salon.js');
                 }]
             }
         });
