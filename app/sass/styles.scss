@@ -2607,3 +2607,45 @@ hr.primary-line {
 .comanda-status-2 {
   background-color: green;
 }
+
+.form-container-2 {
+  text-align: -webkit-center;
+  border-radius: 10px;
+  min-height: 200px;
+  color: white;
+  padding: 10px;
+  background: #4A4A4A;
+  border: 1px solid #979797;
+  box-shadow: inset -2px 7px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.mesa-redonda {
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #979797;
+  border: 10px solid #eee;
+}
+.mesa-cuadrada {
+  width: 80px;
+  height: 80px;
+  background: #979797;
+  border: 10px solid #eee;
+}
+.mesa-rectangular {
+  width: 170px;
+  height: 80px;
+  border: 10px solid #eee;
+  background: #979797;
+}
+.mesa-numero {
+  cursor: pointer;
+}
+.flex-center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
