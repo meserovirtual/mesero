@@ -2871,3 +2871,9 @@ hr.primary-line {
   justify-content: center;
   align-items: center;
 }
+
+/* line 2650, ../sass/styles.scss */
+.mesas-container {
+  display: flex;
+  flex-direction: row;
+}
