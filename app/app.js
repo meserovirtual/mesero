@@ -40,6 +40,8 @@
         'mvEnvios',
         'mvMesas',
         'mvMesasAdministracion',
+        'mvPedidosAdministracion',
+        'mvPedidosDetalles',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -277,6 +279,19 @@
                 }]
             }
         });
+
+        $routeProvider.when('/reportes/pedidos', {
+            templateUrl: 'pedidos/pedidos.html',
+            controller: 'PedidosCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('pedidos/pedidos.js');
+                }]
+            }
+        });
+
 
 
         $routeProvider.when('/cocina/comandas', {

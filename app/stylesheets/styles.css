@@ -2882,3 +2882,8 @@ hr.primary-line {
 .mesas-margin {
   margin: 5px;
 }
+
+/* line 2657, ../sass/styles.scss */
+.input-small-2 {
+  width: 130px !important;
+}
