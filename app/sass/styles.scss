@@ -1026,15 +1026,17 @@ $divider: sqrt($cells);
   font-size: 23px;
   flex-direction: row;
   justify-content: space-between;
-  div{
-    padding: 5px;
-  }
-}
-.container-comanda-footer{
-  background: #505050;
   padding: 10px;
-  color: white;
+}
+
+
+.comanda-observaciones{
+  background: lightgray;
+  color: black;
   font-weight: lighter;
+  padding: 5px;
+  font-size: 18px;
+  font-family: "Roboto", 'sans-serif';
 }
 
 .destino-titulo-comanda{
