@@ -963,7 +963,7 @@ $divider: sqrt($cells);
   border-top-right-radius: 8px;
 }
 .container-comanda-body{
-  background-color: #79996D;
+  background-color: darkgray;
   color:#fff;
   font-family: "Roboto", 'sans-serif';
   font-size: 12px;
@@ -984,9 +984,9 @@ $divider: sqrt($cells);
   background-color: #88C057!important;
 }
 
-.comanda-borde-status{
-  border: 3px solid #88C057;
-}
+//.comanda-borde-status{
+  //border: 3px solid #88C057;
+//}
 
 .separador-acciones-comanda{
   background-color: #D8D8D8;
@@ -1185,10 +1185,10 @@ textarea {
     -ms-animation-duration: 1s;
     -o-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-name: shake;
-    -moz-animation-name: shake;
-    -o-animation-name: shake;
-    animation-name: shake;
+   // -webkit-animation-name: shake;
+    //-moz-animation-name: shake;
+    //-o-animation-name: shake;
+    //animation-name: shake;
   }
 }
 
@@ -1931,22 +1931,24 @@ button:focus { outline-style: none!important; }
   margin: 0 20px 0 0;
 }
 .form-abm{
+  opacity: 0;
   display: none;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 
 }
 .form-open{
+  opacity: 1;
   display: inline;
   width: 474px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 
@@ -2600,14 +2602,18 @@ hr.primary-line {
   margin-top: 5px;
 }
 .comanda-status-0 {
+  width: 100%;
   background-color: red;
 }
 .comanda-status-1 {
+  width: 100%;
   background-color: yellow;
 }
 .comanda-status-2 {
+  width: 100%;
   background-color: green;
 }
+
 
 .form-container-2 {
   text-align: -webkit-center;
