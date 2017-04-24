@@ -949,19 +949,19 @@ $divider: sqrt($cells);
   align-content: flex-start;
 }
 .container-comanda{
-  margin: 5px;
+  margin: 15px;
   width: 100%;
   min-width: 350px;
-  max-width: 600px;
+  max-width: 580px;
 }
 .container-comanda-header{
   font-size: 24px;
-  color: #fff;
+  color: #293333;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 10px;
-  background: black;
+  background: lightgray;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -970,6 +970,7 @@ $divider: sqrt($cells);
   color:#fff;
   font-family: "Roboto", 'sans-serif';
   font-size: 14px;
+  border: 1.5px solid lightgray;
   .boton-cancelar-comanda, .boton-confirmar-comanda{
     background-color: #ED7161;
     height: 20px;
@@ -982,6 +983,16 @@ $divider: sqrt($cells);
     margin: 2px;
       }
   }
+
+.fondo-comandas{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #293333;
+}
 
 .boton-confirmar-comanda:hover, .boton-cancelar-comanda:hover{
   cursor: pointer;
@@ -1031,6 +1042,7 @@ $divider: sqrt($cells);
 
 
 .comanda-observaciones{
+  display: flex;
   background: lightgray;
   color: black;
   font-weight: lighter;
@@ -1039,13 +1051,21 @@ $divider: sqrt($cells);
   font-family: "Roboto", 'sans-serif';
 }
 
-.destino-titulo-comanda{
-  color: white;
-  cursor: pointer;
+.imagen-observaciones {
+  width: 20px;
+  height: 18px;
+  background-image: url("../images/Observaciones.svg");
 }
+.destino-titulo-comanda{
+  font-weight: bolder;
+  font-family: "Roboto-Bold", 'sans-serif';
+}
+
+
 
 .destino-titulo-comanda:hover{
   color: yellow!important;
+  cursor: pointer;
 }
 
 .primary{
