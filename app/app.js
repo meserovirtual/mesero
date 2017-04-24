@@ -292,8 +292,6 @@
             }
         });
 
-
-
         $routeProvider.when('/cocina/comandas', {
             templateUrl: 'comandas/comandas.html',
             controller: 'ComandasCtrl',
