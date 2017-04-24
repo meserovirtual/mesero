@@ -483,7 +483,7 @@ $select-padding: 4px;
 select {
   font-family: "Roboto", 'sans-serif';
   font-weight: bold;
-  width: 232px;
+  width: 230px;
   padding: $select-padding 0;
   font-size: $select-font-size;
   color: black;
@@ -491,10 +491,12 @@ select {
   height: 39px;
   /* Rectangle 2 Copy 3: */
   background: #D8D8D8;
-  border: 1px solid #979797;
   box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
   border-radius: 8px;
   display: inherit;
+  border-style: none;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 /* Remove focus */
@@ -508,7 +510,6 @@ select:focus {
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative;
-  margin-right: 10px;
   &:after {
     position: absolute;
     top: 0.75em;
@@ -547,7 +548,6 @@ textarea {
   font-family: "Roboto", 'sans-serif';
   /* Rectangle 2 Copy 5: */
   background: #D8D8D8;
-  border: 1px solid #979797;
   box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
   border-radius: 8px;
   width: 210px;
@@ -558,6 +558,8 @@ textarea {
   font-weight: bolder;
   margin-bottom: 10px;
   //display: block;
+  border-style: none;
+  margin: 2px;
   @media (max-width: 360px) {
     width: 290px!important;
   }
@@ -877,6 +879,7 @@ $divider: sqrt($cells);
 .mv-col{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   //flex-wrap: wrap;
   //padding: 10px;
   @media (max-width: 360px) {
@@ -978,7 +981,19 @@ $divider: sqrt($cells);
     padding: 0 0 1px 0;
     margin: 2px;
       }
+  }
+
+.boton-confirmar-comanda:hover, .boton-cancelar-comanda:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
+
 
 .boton-confirmar-comanda{
   background-color: #88C057!important;
