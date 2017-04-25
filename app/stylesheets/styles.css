@@ -2944,3 +2944,18 @@ hr.primary-line {
   margin: 0px !important;
   padding: 0px !important;
 }
+
+/* line 2727, ../sass/styles.scss */
+.comanda-selected {
+  border: 5px solid #3b50ce;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* line 2736, ../sass/styles.scss */
+.comanda-row-selected {
+  border: 3px solid rebeccapurple;
+}
