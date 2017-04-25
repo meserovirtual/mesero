@@ -148,6 +148,8 @@
                         'bower_components/mv-angular-mesas/mv-mesas-administracion.js',
                         'bower_components/mv-angular-stocks/mv-pedidos-administracion.js',
                         'bower_components/mv-angular-stocks/mv-pedidos-detalles.js',
+                        'bower_components/mv-angular-stocks/mv-confirmar-pedidos.js',
+                        'bower_components/mv-angular-stocks/mv-pago-proveedores.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -279,6 +281,8 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Stock</a>
                 <a href="#!/reportes/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'pedidos'}">Pedidos</a>
+                <a href="#!/reportes/confirmar" ng-click="appCtrl.sub_menu = 'confirmar'"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'confirmar'}">Confir. Pedidos</a>
             </div>
             <div ng-if="appCtrl.menu =='settings'" class="sub-menu">
                 <a href="#!/settings/clientes" ng-click="appCtrl.sub_menu = 'clientes'"

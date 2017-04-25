@@ -42,6 +42,8 @@
         'mvMesasAdministracion',
         'mvPedidosAdministracion',
         'mvPedidosDetalles',
+        'mvConfirmarPedidos',
+        'mvPagoProveedores',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -288,6 +290,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('pedidos/pedidos.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/confirmar', {
+            templateUrl: 'confirmar/confirmar.html',
+            controller: 'ConfirmarCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('confirmar/confirmar.js');
                 }]
             }
         });
