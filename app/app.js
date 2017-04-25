@@ -44,6 +44,7 @@
         'mvPedidosDetalles',
         'mvConfirmarPedidos',
         'mvPagoProveedores',
+        'mvCancelarDeuda',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
