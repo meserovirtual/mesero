@@ -642,7 +642,7 @@ label{
 }
 
 textarea{
-  width: calc(100% - 20px);
+  width: calc(100% - 23px);
   margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
@@ -879,7 +879,7 @@ $divider: sqrt($cells);
 .mv-col{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  //justify-content: space-between;
   //flex-wrap: wrap;
   //padding: 10px;
   @media (max-width: 360px) {
@@ -1986,7 +1986,7 @@ button:focus { outline-style: none!important; }
 .form-open{
   opacity: 1;
   display: inline;
-  width: 474px;
+  width: 466px;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
@@ -2713,3 +2713,13 @@ hr.primary-line {
   width: 130px !important;
 }
 
+.back-pedidos{
+  color: black;
+  border-bottom: 1px solid #88C057;
+  font-family: "Roboto-Bold", 'sans-serif';
+  font-weight: bolder;
+  label{
+    margin: 0px!important;
+    padding: 0px!important;
+  }
+}
