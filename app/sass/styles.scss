@@ -947,6 +947,7 @@ $divider: sqrt($cells);
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
+  outline: none;
 }
 .container-comanda{
   margin: 15px;
@@ -2725,14 +2726,20 @@ hr.primary-line {
 }
 
 .comanda-selected {
-  border: 5px solid #3b50ce;
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transform: scale(1.02);
+  //border: 5px solid #3b50ce;
+  .container-comanda-header{
+   background-color: #febf04;
+    color: black;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+  }
+
 }
 
 .comanda-row-selected {
-  border: 3px solid rebeccapurple;
+background-color: white;
 }
