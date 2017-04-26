@@ -642,7 +642,7 @@ http://jsfiddle.net/BumU5/3/
   top: 40px;
   left: 0px;
   padding: 5px 8px;
-  background: darkred;
+  background: #79996D;
   color: white;
   font-weight: bolder;
   z-index: 9;
@@ -680,7 +680,7 @@ label {
 
 /* line 644, ../sass/styles.scss */
 textarea {
-  width: calc(100% - 20px);
+  width: calc(100% - 23px);
   margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
@@ -939,7 +939,6 @@ h3 {
 .mv-col {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 @media (max-width: 360px) {
   /* line 879, ../sass/styles.scss */
@@ -2091,7 +2090,7 @@ button:focus {
 .form-open {
   opacity: 1;
   display: inline;
-  width: 474px;
+  width: 466px;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
@@ -2931,4 +2930,32 @@ hr.primary-line {
 /* line 2712, ../sass/styles.scss */
 .input-small-2 {
   width: 130px !important;
+}
+
+/* line 2716, ../sass/styles.scss */
+.back-pedidos {
+  color: black;
+  border-bottom: 1px solid #88C057;
+  font-family: "Roboto-Bold", 'sans-serif';
+  font-weight: bolder;
+}
+/* line 2721, ../sass/styles.scss */
+.back-pedidos label {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* line 2727, ../sass/styles.scss */
+.comanda-selected {
+  border: 5px solid #3b50ce;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* line 2736, ../sass/styles.scss */
+.comanda-row-selected {
+  border: 3px solid rebeccapurple;
 }
