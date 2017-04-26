@@ -501,8 +501,8 @@ select {
   padding: 4px 0;
   font-size: 16px;
   color: black;
-  margin-bottom: 10px;
-  height: 39px;
+  margin-bottom: 2px;
+  height: 38px;
   /* Rectangle 2 Copy 3: */
   background: #D8D8D8;
   box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
