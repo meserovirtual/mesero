@@ -53,18 +53,18 @@
         $routeProvider.otherwise({redirectTo: '/'});
 
         /*
-        $routeProvider.when('/settings/controles', {
-            templateUrl: 'controles/controles.html',
-            controller: 'ControlesCtrl',
-            //data: {requiresLogin: false},
-            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
-                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-                    // you can lazy load files for an existing module
-                    return $ocLazyLoad.load('controles/controles.js');
-                }]
-            }
-        });
-        */
+         $routeProvider.when('/settings/controles', {
+         templateUrl: 'controles/controles.html',
+         controller: 'ControlesCtrl',
+         //data: {requiresLogin: false},
+         resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+         loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+         // you can lazy load files for an existing module
+         return $ocLazyLoad.load('controles/controles.js');
+         }]
+         }
+         });
+         */
 
         $routeProvider.when('/caja/cobros', {
             templateUrl: 'cobros/cobros.html',
@@ -322,14 +322,16 @@
 
     }]).controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['$scope', '$location'];
-    function AppCtrl($scope, $location) {
+    AppCtrl.$inject = ['UserService', '$location'];
+    function AppCtrl(UserService, $location) {
 
         var vm = this;
         vm.hideLoader = true;
         vm.sub_menu_mobile_open = false;
 
         vm.goToPagina = goToPagina;
+        console.log(UserService.getFromToken().data);
+        vm.rol = (UserService.getFromToken().data == undefined) ? 5 : UserService.getFromToken().data.rol;
 
 
         function goToPagina(page) {
