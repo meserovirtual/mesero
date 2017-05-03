@@ -1270,10 +1270,10 @@ textarea {
 .mv-mensaje-custom-show{
   position: fixed;
   height: 50px;
-  width: 420px;
+  width: 500px;
   z-index: 1200;
   top:50%;
-  left: calc(50% - 210px);
+  left: calc(50% - 250px);
   vertical-align: middle;
 
   i {
@@ -1318,7 +1318,7 @@ $success-text: #597151;
 
 .mv-error-message, .mv-success-message, .mv-info-message, .mv-warning-message {
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   //text-align: center;
   //font-weight: bold;
   line-height: 26px;
