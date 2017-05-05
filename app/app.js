@@ -45,6 +45,7 @@
         'mvConfirmarPedidos',
         'mvPagoProveedores',
         'mvCancelarDeuda',
+        'mvConsultaStock',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -303,6 +304,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('confirmar/confirmar.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/consultastock', {
+            templateUrl: 'consulta_stock/consulta_stock.html',
+            controller: 'ConsultaStockCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('consulta_stock/consulta_stock.js');
                 }]
             }
         });
