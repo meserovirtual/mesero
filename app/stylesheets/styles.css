@@ -2961,3 +2961,30 @@ hr.primary-line {
 .comanda-row-selected {
   background-color: white;
 }
+
+/* line 2748, ../sass/styles.scss */
+.btn-excel {
+  background-color: #293333;
+  color: #fff;
+  font-size: 14px;
+  height: 37px;
+  width: 230px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+/* line 2765, ../sass/styles.scss */
+.btn-excel-a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
