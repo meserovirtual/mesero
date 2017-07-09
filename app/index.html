@@ -153,6 +153,8 @@
                         'bower_components/mv-angular-stocks/mv-pago-proveedores.js',
                         'bower_components/mv-angular-usuarios/mv-cancelar-deuda.js',
                         'bower_components/mv-angular-stocks/mv-consulta-stock.js',
+                        'bower_components/mv-angular-stocks/mv-pedidos-faltante.js',
+                        'bower_components/mv-angular-reportes/mv-ventas-web.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -306,6 +308,10 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
                 <a href="#!/settings/avisos" ng-click="appCtrl.sub_menu = 'avisos'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'avisos'}">Avisos</a>
+            </div>
+            <div ng-if="appCtrl.menu =='carrito'" class="sub-menu" ng-if="appCtrl.rol < 7">
+                <a href="#!/carrito/pedidosweb" ng-click="appCtrl.sub_menu = 'pedidosweb'" ng-if="appCtrl.rol < 7"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'pedidosweb'}">Pedidos Web</a>
             </div>
             <div ng-if="appCtrl.menu =='cocina'" class="sub-menu" ng-if="appCtrl.rol < 7">
                 <a href="#!/cocina/comandas" ng-click="appCtrl.sub_menu = 'comandas'" ng-if="appCtrl.rol < 7"
