@@ -46,7 +46,6 @@
         'mvPagoProveedores',
         'mvCancelarDeuda',
         'mvConsultaStock',
-        'mvPedidosFaltantes',
         'mvVentasWeb',
         'LangTables',
         'acHelper',
@@ -356,7 +355,7 @@
         vm.sub_menu_mobile_open = false;
 
         vm.goToPagina = goToPagina;
-        console.log(UserService.getFromToken().data);
+        //console.log(UserService.getFromToken().data);
         vm.rol = (UserService.getFromToken().data == undefined) ? 5 : UserService.getFromToken().data.rol;
 
 
