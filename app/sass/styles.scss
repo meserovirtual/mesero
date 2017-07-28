@@ -15,15 +15,20 @@ $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
 
+//Nueva paleta
+$color-principal: #546E7A;
+$color-secundario: #ECEFF1;
+$color-action: #8aacc8;
+
+
 //@import "bourbon";
 @import "compass";
 @import "compass/reset";
-@import 'https://fonts.googleapis.com/css?family=Roboto';
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 
 $baseFontSize: 16;
 
-$primaryColor: #16a085;
+$primaryColor: gray;
 $secondaryColor: #f2f2f2;
 $green: #009688;
 $blue: #5677fc;
@@ -37,20 +42,14 @@ $slideDuration: .4s;
 }
 
 
+
+
 body {
-  /* Rectangle: */
-  font-family: "Roboto", 'sans-serif';
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
-  //background: #ffffff; /* Old browsers */
-  //background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
-  //background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-  //background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-  //padding: 50px!important;
-  //padding: 5px 10px;
-  margin: 0;
-  //min-height: 2500px; //NO SE QUIEN PUSO ESTE TAMAO
-  background-color: #e5e5e5;
+  font-family: 'Ubuntu', sans-serif;
+    background-image: url("https://s12.postimg.org/opdclkmkd/pattern_6.png");
+    background-color: #546E7A;
+
+
 }
 
 section{
@@ -162,7 +161,7 @@ section{
   font-size: 14px;
   font-style: inherit;
   font-variant: inherit;
-  font-family: inherit;
+  font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   overflow: hidden;
   -webkit-transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
@@ -213,18 +212,16 @@ section{
 form{
   text-align: -webkit-center;
   //background: #293333;
-  border-radius: 10px;
+  border-radius: 3px;
   min-height: 200px;
   color: white;
   padding: 10px;
   /* Rectangle 4 Copy: */
-  background: #4A4A4A;
-  border: 1px solid #979797;
-  box-shadow: inset -2px 7px 6px 0px rgba(0,0,0,0.50);
+  background: #293333;
 
 
   h3{
-    font-family: "Roboto", 'sans-serif';
+    font-family: 'Ubuntu', sans-serif;
     padding: 0px;
     color: white;
     font-weight: lighter;
@@ -236,7 +233,7 @@ form{
 //////////////CHECKBOX
 
 .lbl{
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   position: relative;
   display:block;
   height:20px;
@@ -401,20 +398,21 @@ input:checked + label .inner {
 h1 {
   margin-bottom:20px;
   color:#293333;
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
   font-size:24px;
   margin-top: 30px;
 }
 
 .secciones{
-  font-family: "Roboto-Bold", 'sans-serif';
-  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
   font-size: 45px;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
   font-weight: 800;
+  text-transform: uppercase;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -456,11 +454,12 @@ small {
 h2{
   text-align: -webkit-left;
   font-size: 20px;
-  font-family: "Roboto", 'sans-serif';
-  background: #79996D;
+  font-family: 'Ubuntu', sans-serif;
+  background: $color-action;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 5px;
   color: white;
-  font-weight: lighter;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -481,8 +480,7 @@ $select-padding: 4px;
 
 /* Style Select Field */
 select {
-  font-family: "Roboto", 'sans-serif';
-  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
   width: 230px;
   padding: $select-padding 0;
   font-size: $select-font-size;
@@ -490,9 +488,8 @@ select {
   margin-bottom: 2px;
   height: 38px;
   /* Rectangle 2 Copy 3: */
-  background: #D8D8D8;
-  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
-  border-radius: 8px;
+  background: white;
+  border-radius: 4px;
   display: inherit;
   border-style: none;
   margin-left: 2px;
@@ -508,7 +505,7 @@ select:focus {
 /* Use custom arrow */
 .mdl-selectfield select {appearance: none}
 .mdl-selectfield {
-  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   position: relative;
   &:after {
     position: absolute;
@@ -545,17 +542,15 @@ input[type="time"],
 textarea {
   color: black;
   outline: none;
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   /* Rectangle 2 Copy 5: */
-  background: #D8D8D8;
-  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
-  border-radius: 8px;
+  background: white;
+  border-radius: 4px;
   width: 210px;
   height: 35px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
-  font-weight: bolder;
   margin-bottom: 10px;
   //display: block;
   border-style: none;
@@ -588,7 +583,7 @@ http://jsfiddle.net/BumU5/3/
   content:'';
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #79996D;
+  border-bottom: 5px solid $color-principal;
   position:absolute;
   top:40px;
   left:35px;
@@ -599,7 +594,7 @@ http://jsfiddle.net/BumU5/3/
   height:0;
 }
 [data-tip]:after {
-  font-family: "Roboto-Bold", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   display:none;
   content:attr(data-tip);
   position:absolute;
@@ -607,8 +602,8 @@ http://jsfiddle.net/BumU5/3/
   left:0px;
   padding:5px 8px;
   //background:#79996D;
-  background: #79996D;
-  color:white;
+  background: $color-action;
+  color:$color-principal;
   font-weight: bolder;
   z-index:9;
   font-size: 0.75em;
@@ -633,12 +628,15 @@ http://jsfiddle.net/BumU5/3/
 
 
 label{
+  color: black;
   display: block;
   opacity: 1;
   max-width: 100%;
   margin-bottom: 5px;
   margin-top: 15px;
   padding: 2px;
+  text-align: left;
+  font-weight: 500;
 }
 
 textarea{
@@ -651,16 +649,16 @@ textarea{
 
 ::-webkit-input-placeholder {
   /* Usuario: */
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
-  color: black;
+  color: black!important;
   opacity: .5;
 }
 
 
 
 .botones:focus, input:focus, textarea:focus{
-  background-color: #536363;
+  background-color: $color-action;
   color: white;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -672,26 +670,24 @@ textarea{
 
 table{
   border-spacing: 0px;
-  font-family: "Roboto", 'sans-serif';
-  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left!important;
   width: 100%;
 
   th{
-    text-align: center;
     border-style: none;
     font-size: 12px;
     padding: 10px;
-    background-color: #293333;
+    background-color: $color-action;
     color: white;
-    font-weight: bold;
+    text-transform: uppercase;
     max-width: 160px;
 
 
   }
 
   td{
-    text-align: center;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-spacing: 1px;
   }
 
@@ -701,7 +697,7 @@ table{
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #79996D;
+    background-color: #293333;
     color: white;
     font-weight: lighter;
     max-width: 160px;
@@ -709,12 +705,13 @@ table{
   }
 
   tr:hover{
-    background-color: #536363!important;
+    background-color: #eeffff!important;
+    color: $color-principal;
     cursor: pointer;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 
   @media (min-width: 361px) {
@@ -733,7 +730,7 @@ table{
 
 tfoot td{
   //* Rectangle 3 Copy 28: */
-  background: #536363;
+  background: #546E7A;
   padding: 0px;
   //Agregado por Mateo
   justify-content: space-around;
@@ -741,7 +738,7 @@ tfoot td{
 }
 
 tfoot td:hover{
-  -webkit-transition: none!important;
+  background: #546E7A!important;
 
 
 }
@@ -795,7 +792,7 @@ tfoot td:hover{
 
 ////// HEAD
 h3{
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 $cells: 64;
@@ -824,10 +821,12 @@ $divider: sqrt($cells);
   width: 100px;
   flex: 0 0 37px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 0;
   border: 0;
   overflow: hidden;
+  background-color: #293333!important;
+  border-style: 1px solid $color-action;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -840,9 +839,7 @@ $divider: sqrt($cells);
 .boton-cancelar, .btn-cancelar{
   background-color:#ED7161!important;
 }
-.boton-agregar, .btn-agregar{
-  background-color: #293333;
-}
+
 .boton-ok, .btn-ok{
   background-color: #00CE5D;
 }
@@ -861,7 +858,7 @@ $divider: sqrt($cells);
 .btn-agregar:hover, .btn-cancelar:hover, .btn-ok:hover, .btn-eliminar:hover, .btn-calendario:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer!important;
-  background-color: #79996D!important;
+  background-color: $color-action!important;
   -ms-transform: scale(1.2, 1.2); /* IE 9 */
   -webkit-transform: scale(1.2, 1.2); /* Safari */
   transform: scale(1.2, 1.2);
@@ -924,6 +921,7 @@ $divider: sqrt($cells);
 .container{
   //width: 700px;
   margin: 0 auto;
+  //max-width: 1400px;
 }
 
 .container-padding{
@@ -932,14 +930,15 @@ $divider: sqrt($cells);
 .container-small {
   width: 60%;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .container-small-2{
   width: 50%;
   margin: 0 auto;
 }
-.container-form {
-  width: calc(100% - 40px);
+.container-form{
+  margin: auto;
+  padding: 20px;
 }
 .container-flex {
   display: flex;
@@ -957,21 +956,19 @@ $divider: sqrt($cells);
 }
 .container-comanda-header{
   font-size: 24px;
-  color: #293333;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 10px;
-  background: lightgray;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background: $color-action;
 }
 .container-comanda-body{
   background-color: #505050;
   color:#fff;
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
-  border: 1.5px solid lightgray;
+  //border: 1.5px solid lightgray;
   .boton-cancelar-comanda, .boton-confirmar-comanda{
     background-color: #ED7161;
     height: 20px;
@@ -985,15 +982,7 @@ $divider: sqrt($cells);
       }
   }
 
-.fondo-comandas{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #293333;
-}
+
 
 .boton-confirmar-comanda:hover, .boton-cancelar-comanda:hover{
   cursor: pointer;
@@ -1027,7 +1016,7 @@ $divider: sqrt($cells);
   display: flex;
   flex-direction: row;
   font-weight: bold;
-  font-family: "Roboto-Bold", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   justify-content: space-between;
   padding: 10px;
@@ -1049,7 +1038,7 @@ $divider: sqrt($cells);
   font-weight: lighter;
   padding: 5px;
   font-size: 18px;
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .imagen-observaciones {
@@ -1059,7 +1048,7 @@ $divider: sqrt($cells);
 }
 .destino-titulo-comanda{
   font-weight: bolder;
-  font-family: "Roboto-Bold", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -1091,12 +1080,12 @@ $divider: sqrt($cells);
 }
 
 .panel-primary {
-  border-color: #79996D;
+  border-color: $color-action;
 }
 .panel {
   margin-bottom: 20px;
-  border: 1px solid #79996D;
-  border-radius: 4px;
+  border: 1px solid $color-action;
+  border-radius: 3px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
   width: 500px;
@@ -1106,8 +1095,8 @@ $divider: sqrt($cells);
 }
 .panel-primary>.panel-heading {
   color: #fff;
-  background-color: #79996D;
-  border-color: #79996D;
+  background-color: $color-action;
+  border-color: $color-action;
 }
 .panel-group .panel-heading {
   border-bottom: 0;
@@ -1125,9 +1114,9 @@ $divider: sqrt($cells);
 
 input.buscador{
   //width: 99%!important;
-  background: url(images/lupa.svg) no-repeat #D8D8D8 scroll 0px 0px;
+  background: url(images/lupa.svg) no-repeat white scroll 0px 0px;
   padding-left:40px;
-  color:#000;
+  color: #536363;
   width: calc(100% - 15px)!important;
   margin-bottom: 20px!important;
 }
@@ -1181,7 +1170,7 @@ input.buscador{
 
     border:4px solid #FFFFFF;
     overflow:hidden;
-    background-image: linear-gradient(to bottom, #79996D 50%, #FFFFFF 50%);
+    background-image: linear-gradient(to bottom, $color-action 50%, #FFFFFF 50%);
     background-size: 100% 200%;
     transition: all 1s;
     color: #FFFFFF;
@@ -1200,7 +1189,7 @@ input.buscador{
 
     &:hover{
       background-position: 0 -100%;
-      color:#79996D;
+      color:$color-action!important;
     }
   }
 }
@@ -1396,29 +1385,24 @@ button:focus { outline-style: none!important; }
 //*******************************************************************************
 //SECCION PARA EL MENU
 .header {
-  font-family: 'Merriweather', serif;
-  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
+  //font-weight: bolder;
   color: white!important;;
   width: 100%;
-  height: 50px;
-  background-color: #505050;
+  height: 56px;
+  background-color: #293333;
   position: fixed;
   //top: 50px;
   top: 100px;
   z-index: 1000;
   @media (min-width: 800px) {
     display: flex;
-    //justify-content: center;
-    height: 50px;
-    -webkit-box-shadow: 0px 15px 5px -9px rgba(0, 0, 0, 0.09);
-    -moz-box-shadow: 0px 15px 5px -9px rgba(0, 0, 0, 0.09);
-    box-shadow: 0px 15px 5px -9px rgba(0, 0, 0, 0.09);
-  }
+     }
 }
 
 .menu-icon{
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1426,8 +1410,9 @@ button:focus { outline-style: none!important; }
 }
 
 .menu-icon:hover, .menu-icon2:hover{
-  -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+  -webkit-filter: drop-shadow(0px 0px 15px #eeffff);
   cursor: pointer;
+
 
 }
 
@@ -1562,7 +1547,7 @@ button:focus { outline-style: none!important; }
 }
 
 .menu-mobile-panel {
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   width: 100%;
   background: rgb(164,169,181); /* Old browsers */
@@ -1595,7 +1580,7 @@ button:focus { outline-style: none!important; }
 
   .menu-desktop-btn {
     text-align: center;
-    //font-family: 'Droid Serif', serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: Bold;
     line-height: 16px;
     font-size: 18px;
@@ -1830,19 +1815,27 @@ button:focus { outline-style: none!important; }
     justify-content: flex-end;
     width: 77%;
     align-items: center;
+    height: 56px;
 
     .sub-menu{
-      font-family: "Roboto", 'sans-serif';
+      font-family: 'Ubuntu', sans-serif;
       font-size: 14px;
 
       a{
         color: #fff;
         text-decoration: none;
         margin: 0 15px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
       }
       a:hover{
-        color: #79996D!important;
+       // padding: 20px 5px;
+        color: $color-action!important;
         cursor: pointer;
+        -webkit-filter: drop-shadow(0px 0px 15px #eeffff);
         -webkit-transition: all .3s ease-in-out;
         -moz-transition: all .3s ease-in-out;
         -ms-transition: all .3s ease-in-out;
@@ -1885,16 +1878,17 @@ button:focus { outline-style: none!important; }
 
       .menu-desktop-btn {
         cursor: pointer;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         color: white;
         //font-weight: lighter!important;
         font-weight:bold;
         text-decoration: none;
-        padding: 3px 10px;
+        padding: 7px 8px;
+        -webkit-border-radius: 30px;
         position: relative;
+        border-right: 1px solid $color-principal;
         font-size: 12px;
         opacity: 0;
-        //border-right: 0.1px solid white;
         -webkit-animation: fadeIn ease-in-out 2; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
         -moz-animation: fadeIn ease-in-out 2;
         animation: fadeIn ease-in-out 2;
@@ -1931,7 +1925,7 @@ button:focus { outline-style: none!important; }
 }
 
 .menu-desktop #menu-desktop-right .sub-menu {
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   font-size: .8vw;
   line-height: 2vh;
 }
@@ -1941,12 +1935,12 @@ button:focus { outline-style: none!important; }
 
 //************************************************************************************
 .login {
-  font-family: 'Merriweather', serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
   color: white !important;
   width: 100%;
   height: 50px;
-  background-color: #eee;
+  background-color: $color-principal;
   position: fixed;
   //top: 0px;
   top: 50px;
@@ -1998,11 +1992,12 @@ button:focus { outline-style: none!important; }
 
 .detalle-container{
   h3{
-    color: #79996D;
+    color: $color-action;
     margin-bottom: 2px;
     margin-top: 20px;
     text-transform: uppercase;
     font-size: 30px;
+    font-weight: 500;
   }
   .nombre-producto-form{
     margin-top: 3px;
@@ -2031,12 +2026,13 @@ ol, ul {
 .label--radio{
   position: relative;
   margin: 0.5rem;
-  font-family: "Roboto", 'sans-serif';
+  font-family: 'Ubuntu', sans-serif;
   line-height: 135%;
   cursor: pointer;
   /* vertical-align: text-bottom; */
   display: flex;
   padding-top: 10px;
+  color: $color-action;
 }
 
 .checkbox {
@@ -2205,7 +2201,7 @@ ul.enlarge span{
   left: -9999px;
   background-color:#dddddd;
   padding: 10px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size:.9em;
   text-align: center;
   color: #495a62;
@@ -2305,8 +2301,6 @@ ul.enlarge img, ul.enlarge span{
 .form-flex-center {
   justify-content: center;
   padding-top: 4px;
-  max-width: 1000px;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -2314,8 +2308,8 @@ mv-autocomplete {
   display: inherit;
 }
 mv-autocomplete:focus {
-  border: solid 1px $color3;
-  color: red;
+  border: solid 1px $color-principal;
+  color: white;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -2338,7 +2332,7 @@ mv-waiting {
     span {
       font-weight: bolder;
       color: white;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
       font-size: 40px;
       text-shadow: 4px 4px #293333;
       -webkit-animation: pulse 1.5s infinite;
@@ -2370,28 +2364,18 @@ ul {
 .mv-autocomplete-panel {
   position: absolute;
   z-index: 1;
-  background-color: #536363;
-  //margin-top: 41px;
+  background-color: #293333;
   margin-top: -10px;
-  //left: 24.5%;
-  width: 90%;
+  width: 98%;
   max-height: 220px;
   overflow-y: auto;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 2px;
+
 }
 
 .mv-autocomplete-selected {
-  color: black;
-  background: rgba(164, 179, 87, 1);
-  background: -moz-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(100%, rgba(117, 137, 12, 1)));
-  background: -webkit-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
+  color: white;
+  background-color: $color-action;
 }
 
 
@@ -2413,7 +2397,7 @@ form.form{
 }
 
 abrir-cerrar-caja h3{
-  color: rgba(164, 179, 87, 1);
+  color: $color-principal;
   font-size: 25px;
   margin-bottom:20px;
 }
@@ -2428,7 +2412,7 @@ abrir-cerrar-caja h3{
 
 
 .readonly {
-  background-color: #79996d !important;
+  background-color: $color-principal !important;
   color: white !important;
 }
 
@@ -2446,9 +2430,9 @@ abrir-cerrar-caja h3{
     margin: auto;
   }
   span{
-    font-family: Roboto;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #FFCC66;
+    color: lightgray;
     text-transform: uppercase;
   }
 }
@@ -2466,8 +2450,7 @@ abrir-cerrar-caja h3{
   padding-left: 5px;
   width: 24px;
   height: 15px;
-  //background-color: #e42828;
-  background-color: blue;
+  background-color: #FF5722;
   border-radius: 4px;
   color: #fff;
   font-size: 12px;
@@ -2564,6 +2547,9 @@ abrir-cerrar-caja h3{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  input{
+    margin-left: 5px!important;
+  }
 }
 
 
@@ -2648,7 +2634,7 @@ hr.primary-line {
 }
 .comanda-status-0 {
   width: 100%;
-  background-color: #ED7161;
+  background-color: #ff3d00;
 }
 .comanda-status-1 {
   width: 100%;
@@ -2667,7 +2653,7 @@ hr.primary-line {
 
 .form-container-2 {
   text-align: -webkit-center;
-  border-radius: 10px;
+  border-radius: 4px;
   min-height: 200px;
   color: white;
   padding: 10px;
@@ -2717,20 +2703,19 @@ hr.primary-line {
 
 .back-pedidos{
   color: black;
-  border-bottom: 1px solid #88C057;
-  font-family: "Roboto-Bold", 'sans-serif';
-  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
   label{
     margin: 0px!important;
     padding: 0px!important;
+    color: white!important;
   }
 }
 
 .comanda-selected {
   //border: 5px solid #3b50ce;
   .container-comanda-header{
-   background-color: #febf04;
-    color: black;
+   background-color: #eeffff;
+   color: black;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -2769,4 +2754,7 @@ background-color: white;
   align-items: center;
 }
 
-
+#abrirCerraCajaForm, #gastosForm, #mv-depositos{
+  width: 236px!important;
+  margin: auto;
+}

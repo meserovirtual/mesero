@@ -47,6 +47,8 @@
         'mvCancelarDeuda',
         'mvConsultaStock',
         'mvVentasWeb',
+        'mvCampaniaMail',
+        'mvPlatoMasVendido',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -136,6 +138,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('detalle_caja/detalle_caja.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/caja/campania', {
+            templateUrl: 'campania/campania.html',
+            controller: 'CampaniaCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('campania/campania.js');
                 }]
             }
         });
@@ -269,6 +283,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('login/login.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/plato_mas_vendido', {
+            templateUrl: 'plato_mas_vendido/plato_mas_vendido.html',
+            controller: 'PlatoMasVendidoCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('plato_mas_vendido/plato_mas_vendido.js');
                 }]
             }
         });

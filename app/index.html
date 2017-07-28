@@ -154,6 +154,8 @@
                         'bower_components/mv-angular-usuarios/mv-cancelar-deuda.js',
                         'bower_components/mv-angular-stocks/mv-consulta-stock.js',
                         'bower_components/mv-angular-comandas/mv-ventas-web.js',
+                        'bower_components/mv-angular-cajas/mv-campania-mail.js',
+                        'bower_components/mv-angular-reportes/mv-plato-mas-vendido.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -271,10 +273,12 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'movimientos'}">Movimientos Merc.</a>
                 <a href="#!/caja/detalle_caja" ng-click="appCtrl.sub_menu = 'detalle_caja'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'detalle_caja'}">Detalle de Caja</a>
+                <a href="#!/caja/campania" ng-click="appCtrl.sub_menu = 'campania'" ng-if="appCtrl.rol < 1"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'campania'}">Campaña Mail</a>
             </div>
             <div ng-if="appCtrl.menu =='reportes'" class="sub-menu"  ng-if="appCtrl.rol < 1">
-                <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'" ng-if="appCtrl.rol < 1"
-                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Platos Más Vendidos</a>
+                <a href="#!/reportes/plato_mas_vendido" ng-click="appCtrl.sub_menu = 'plato_mas_vendido'" ng-if="appCtrl.rol < 1"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'plato_mas_vendido'}">Platos Más Vendidos</a>
                 <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Ventas Totales</a>
                 <a href="#!/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'" ng-if="appCtrl.rol < 1"
