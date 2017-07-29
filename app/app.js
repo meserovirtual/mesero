@@ -49,6 +49,7 @@
         'mvVentasWeb',
         'mvCampaniaMail',
         'mvPlatoMasVendido',
+        'mvSalonAdministracion',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -69,6 +70,18 @@
          }
          });
          */
+
+        $routeProvider.when('/salon/salon', {
+            templateUrl: 'salon/salon.html',
+            controller: 'SalonCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('salon/salon.js');
+                }]
+            }
+        });
 
         $routeProvider.when('/caja/cobros', {
             templateUrl: 'cobros/cobros.html',
@@ -250,14 +263,14 @@
             }
         });
 
-        $routeProvider.when('/settings/salon', {
-            templateUrl: 'salon/salon.html',
-            controller: 'SalonCtrl',
+        $routeProvider.when('/settings/mesas', {
+            templateUrl: 'mesas/mesas.html',
+            controller: 'MesasCtrl',
             data: {requiresLogin: true},
             resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
-                    return $ocLazyLoad.load('salon/salon.js');
+                    return $ocLazyLoad.load('mesas/mesas.js');
                 }]
             }
         });

@@ -156,6 +156,7 @@
                         'bower_components/mv-angular-comandas/mv-ventas-web.js',
                         'bower_components/mv-angular-cajas/mv-campania-mail.js',
                         'bower_components/mv-angular-reportes/mv-plato-mas-vendido.js',
+                        'bower_components/mv-angular-mesas/mv-salon-administracion.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -228,8 +229,8 @@
             <!--<div id="menu-desktop-upper"></div>-->
             <div id="menu-desktop-lower">
                 <div id="menu-desktop-lower-inner">
-                    <a class="menu-desktop-btn ac-ripple" href="#!/working" title="Platos" ng-if="appCtrl.rol < 1"
-                       ng-click="appCtrl.menu = 'platos'">
+                    <a class="menu-desktop-btn ac-ripple" href="#!/salon/salon" title="Salon" ng-if="appCtrl.rol < 1"
+                       ng-click="appCtrl.menu = 'salon'">
                         <img src="images/logo1.svg" class="menu-icon">
                     </a>
                     <a class="menu-desktop-btn ac-ripple" href="#!/caja/cobros" title="Caja" ng-if="appCtrl.rol < 1"
@@ -260,6 +261,10 @@
             </div>
         </div>
         <div id="menu-desktop-right">
+            <div ng-if="appCtrl.menu =='salon'" class="sub-menu" ng-if="appCtrl.rol < 7">
+                <a href="#!/salon/salon" ng-click="appCtrl.sub_menu = 'salon'" ng-if="appCtrl.rol < 1"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'salon'}">Salon</a>
+            </div>
             <div ng-if="appCtrl.menu =='caja'" class="sub-menu" ng-if="appCtrl.rol < 7">
                 <a href="#!/caja/cobros" ng-click="appCtrl.sub_menu = 'cobros'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'cobros'}">Cobros</a>
@@ -299,8 +304,8 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'proveedores'}">Proveedores</a>
                 <a href="#!/settings/usuarios" ng-click="appCtrl.sub_menu = 'usuarios'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'usuarios'}">Usuarios</a>
-                <a href="#!/settings/salon" ng-click="appCtrl.sub_menu = 'salon'" ng-if="appCtrl.rol < 1"
-                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'salon'}">Salón</a>
+                <a href="#!/settings/mesas" ng-click="appCtrl.sub_menu = 'mesas'" ng-if="appCtrl.rol < 1"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'mesas'}">Mesas</a>
                 <a href="#!/settings/productostipo" ng-click="appCtrl.sub_menu = 'productostipo'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productostipo'}">Tipos de Productos</a>
                 <a href="#!/settings/productos" ng-click="appCtrl.sub_menu = 'productos'" ng-if="appCtrl.rol < 1"
