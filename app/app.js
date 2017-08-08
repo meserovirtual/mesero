@@ -50,6 +50,8 @@
         'mvCampaniaMail',
         'mvPlatoMasVendido',
         'mvSalonAdministracion',
+        'mvEstadisticas',
+        'mvPromedioVentas',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -308,6 +310,30 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('plato_mas_vendido/plato_mas_vendido.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/estadisticas', {
+            templateUrl: 'estadisticas/estadisticas.html',
+            controller: 'EstadisticasCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('estadisticas/estadisticas.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/ventas', {
+            templateUrl: 'ventas/ventas.html',
+            controller: 'VentasCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('ventas/ventas.js');
                 }]
             }
         });
