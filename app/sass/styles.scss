@@ -16,9 +16,14 @@ $divider-color:        #BDBDBD;
 
 
 //Nueva paleta
-$color-principal: #546E7A;
-$color-secundario: #ECEFF1;
+//$color-principal: #E91E6;
+$color-principal: #00ACC1;
+$color-hover-tabla: #84FFFF;
+$color-secundario: #263238;
 $color-action: #8aacc8;
+$color-focus: #eeffff;
+$color-complementario: #546E7A;
+
 
 
 //@import "bourbon";
@@ -46,8 +51,9 @@ $slideDuration: .4s;
 
 body {
   font-family: 'Ubuntu', sans-serif;
-    background-image: url("https://s12.postimg.org/opdclkmkd/pattern_6.png");
-    background-color: #546E7A;
+    //background-image: url("https://s12.postimg.org/opdclkmkd/pattern_6.png");
+    background-color: #bdc3c7;
+
 
 
 }
@@ -124,6 +130,113 @@ section{
   -moz-animation-name: FadeInTop;
   -o-animation-name: FadeInTop;
   animation-name: FadeInTop;
+}
+
+
+
+
+
+@-webkit-keyframes FadeInTop2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes FadeInTop2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-o-keyframes FadeInTop2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes FadeInTop2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.FadeInTop2 {
+  -webkit-animation-name: FadeInTop2;
+  -moz-animation-name: FadeInTop2;
+  -o-animation-name: FadeInTop2;
+  animation-name: FadeInTop2;
+}
+
+
+@-webkit-keyframes FadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes FadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-o-keyframes FadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes FadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+.FadeInLeft {
+  -webkit-animation-name: FadeInLeft;
+  -moz-animation-name: FadeInLeft;
+  -o-animation-name: FadeInTop2;
+  animation-name: FadeInLeft;
 }
 
 
@@ -212,12 +325,13 @@ section{
 form{
   text-align: -webkit-center;
   //background: #293333;
-  border-radius: 3px;
+  border-radius: 2px;
   min-height: 200px;
   color: white;
-  padding: 10px;
+  padding: 5px;
   /* Rectangle 4 Copy: */
-  background: #293333;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 
   h3{
@@ -291,108 +405,6 @@ form{
   display:none;
 }
 
-//////////////////////Radio buttons
-/*
-$duration: 200ms;
-$easing: ease-out;
-$red: #FF373D;
-$green: #00CE5D;
-
-@import "https://fonts.googleapis.com/css?family=Roboto:300";
-
-
-
-label {
-  display:inline-block;
-  position:relative;
-  width:30px;
-  height:30px;
-  margin: 10px;
-  padding: 5px;
-  border-radius:50%;
-  background:$red;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
-  transition:all $duration $easing;
-  cursor:pointer;
-}
-
-.inner {
-  @extend .align-middle;
-  width:100%;
-  height:100%;
-  display:block;
-  border-radius:50%;
-  transform:scale(0.6);
-  transition:all $duration $easing 100ms;
-}
-
-.icon {
-  display:block;
-  width:20px;
-  height:3px;
-  @extend .align-middle;
-}
-
-.icon:before {
-  content:'';
-  position:absolute;
-  top:0;
-  display:block;
-  width:20px;
-  height:3px;
-  background:#fff;
-  transform:rotate(45deg);
-  border-radius:3px;
-  transition:all $duration $easing;
-}
-
-.icon:after {
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  display:block;
-  width:20px;
-  height:3px;
-  background:#fff;
-  transform:rotate(-45deg);
-  border-radius:3px;
-  transition:all $duration $easing;
-}
-
-// effect one
-
-input.effect-one:checked + label .icon:after {
-  right:-5px;
-}
-
-input.effect-one:checked + label .icon:before {
-  width:11px;
-  top:4px;
-}
-
-// effect two
-
-input.effect-two:checked + label .icon:after {
-  width:11px;
-  top:4px;
-  right:9px;
-  transform: rotate(45deg);
-}
-
-input.effect-two:checked + label .icon:before {
-  transform: rotate(-45deg);
-  right:-5px;
-}
-
-// "ripple"
-
-input:checked + label .inner {
-  background:$green;
-  transform:scale(1);
-}
-*/
-
 
 
 h1 {
@@ -407,21 +419,20 @@ h1 {
 .secciones{
   font-family: 'Ubuntu', sans-serif;
   color: white;
-  font-size: 45px;
+  font-size: 29px;
   margin: auto;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 800;
+  text-align: left;
+  margin-bottom: 15px;
+  font-weight: 400;
   text-transform: uppercase;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-name: FadeInTop;
-  -moz-animation-name: FadeInTop;
-  -o-animation-name: FadeInTop;
-  animation-name: FadeInTop;
+  -webkit-animation: FadeInTop2 ease-in 1;
+  -moz-animation: FadeInTop2 ease-in 1;
+  animation: FadeInTop2 ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  animation-duration: .5s;
   @media (max-width: 400px) {
     font-size: 40px!important;
     padding: 5px!important;
@@ -455,13 +466,14 @@ h2{
   text-align: -webkit-left;
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
-  background: $color-action;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 5px;
+  background: $color-principal;
   color: white;
-  padding: 10px;
+  padding: 12px;
+  text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 
@@ -481,7 +493,7 @@ $select-padding: 4px;
 /* Style Select Field */
 select {
   font-family: 'Ubuntu', sans-serif;
-  width: 230px;
+  width: 221px;
   padding: $select-padding 0;
   font-size: $select-font-size;
   color: black;
@@ -489,11 +501,12 @@ select {
   height: 38px;
   /* Rectangle 2 Copy 3: */
   background: white;
-  border-radius: 4px;
+  border-radius: 2px;
   display: inherit;
-  border-style: none;
+  border: .5px solid darkgray;
   margin-left: 2px;
   margin-right: 2px;
+  margin-top: 2px;
 }
 
 /* Remove focus */
@@ -545,15 +558,15 @@ textarea {
   font-family: 'Ubuntu', sans-serif;
   /* Rectangle 2 Copy 5: */
   background: white;
-  border-radius: 4px;
-  width: 210px;
+  border-radius: 2px;
+  border: .5px solid darkgray;
+  width: 199px;
   height: 35px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
   margin-bottom: 10px;
   //display: block;
-  border-style: none;
   margin: 2px;
   @media (max-width: 360px) {
     width: 290px!important;
@@ -601,25 +614,26 @@ http://jsfiddle.net/BumU5/3/
   top:40px;
   left:0px;
   padding:5px 8px;
-  //background:#79996D;
-  background: $color-action;
-  color:$color-principal;
+  background: $color-complementario;
+  color: white;
   font-weight: bolder;
   z-index:9;
   font-size: 0.75em;
   height:18px;
   line-height:18px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   white-space:nowrap;
   word-wrap:normal;
-  width: 210px;
+  width: 199px;
   margin: 5px 5px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -webkit-animation: FadeInTop ease-in 1;
+  -moz-animation: FadeInTop ease-in 1;
+  animation: FadeInTop ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .3s;
+  -moz-animation-duration: .3s;
+  animation-duration: .3s;
 }
 [data-tip]:hover:before,
 [data-tip]:hover:after {
@@ -629,19 +643,19 @@ http://jsfiddle.net/BumU5/3/
 
 label{
   color: black;
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
   opacity: 1;
   max-width: 100%;
   margin-bottom: 5px;
   margin-top: 15px;
   padding: 2px;
-  text-align: left;
+  justify-content: left;
   font-weight: 500;
 }
 
 textarea{
   width: calc(100% - 23px);
-  margin-top: 10px;
   min-height: 70px;
   padding-top: 10px;
   //display: block;
@@ -658,7 +672,7 @@ textarea{
 
 
 .botones:focus, input:focus, textarea:focus{
-  background-color: $color-action;
+  background-color: $color-principal;
   color: white;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -673,12 +687,22 @@ table{
   font-family: 'Ubuntu', sans-serif;
   text-align: left!important;
   width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -webkit-animation: FadeInTop2 ease-in 1;
+  -moz-animation: FadeInTop2 ease-in 1;
+  animation: FadeInTop2 ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
 
   th{
     border-style: none;
     font-size: 12px;
     padding: 10px;
-    background-color: $color-action;
+    background-color: $color-secundario;
     color: white;
     text-transform: uppercase;
     max-width: 160px;
@@ -697,16 +721,16 @@ table{
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #293333;
-    color: white;
+    background-color: white;
+    color: black;
     font-weight: lighter;
     max-width: 160px;
 
   }
 
   tr:hover{
-    background-color: #eeffff!important;
-    color: $color-principal;
+    background-color: $color-principal!important;
+    color: white;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -717,7 +741,7 @@ table{
   @media (min-width: 361px) {
     //min-width: 650px;
     th {
-      font-size: 16px;
+      font-size: 15px;
     }
     tr {
       font-size: 14px;
@@ -730,7 +754,8 @@ table{
 
 tfoot td{
   //* Rectangle 3 Copy 28: */
-  background: #546E7A;
+  background: $color-secundario;
+  color: white;
   padding: 0px;
   //Agregado por Mateo
   justify-content: space-around;
@@ -738,7 +763,7 @@ tfoot td{
 }
 
 tfoot td:hover{
-  background: #546E7A!important;
+  background: $color-secundario!important;
 
 
 }
@@ -761,8 +786,8 @@ tfoot td:hover{
 .paginacion-sig,
 .paginacion-ultima,
 .paginacion-ant {
-  width: 52px;
-  height: 48px;
+  width: 40px;
+  height: 36px;
   border-style: none;
 }
 .delivery-paginacion-primera,
@@ -813,9 +838,9 @@ $divider: sqrt($cells);
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-.btn-agregar, .btn-cancelar, .btn-ok, .btn-eliminar, .btn-calendario {
+.btn-agregar, .btn-cancelar, .btn-ok, .btn-eliminar, .btn-calendario{
   position: relative;
-  color:#fff;
+  color: white;
   font-size: 14px;
   height: 37px;
   width: 100px;
@@ -823,28 +848,41 @@ $divider: sqrt($cells);
   display: inline-block;
   border-radius: 4px;
   padding: 0;
-  border: 0;
+  background-color: #263238;
   overflow: hidden;
-  background-color: #293333!important;
-  border-style: 1px solid $color-action;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  border-style: none;
 }
+
+.boton-agregar{
+  background-color: #263238;
+  .fa-plus:before{
+  color: white;
+  .fa-plus:hover, .fa-plus:after{
+    color: $color-principal!important;
+  }
+}
+}
+
+
+
+
 .btn-small {
   height: 27px;
   width: 27px;
 }
 .boton-cancelar, .btn-cancelar{
-  background-color:#ED7161!important;
+  background-color:#FF1744!important;
 }
 
 .boton-ok, .btn-ok{
-  background-color: #00CE5D;
+  background-color: #689F38;
 }
 .boton-eliminar, .btn-eliminar{
-  background-color: sandybrown;
+  background-color: #795548;
 }
 .boton-calendario, .btn-calendario{
   background-color: #447EAF;
@@ -858,7 +896,8 @@ $divider: sqrt($cells);
 .btn-agregar:hover, .btn-cancelar:hover, .btn-ok:hover, .btn-eliminar:hover, .btn-calendario:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer!important;
-  background-color: $color-action!important;
+  background-color: $color-principal!important;
+  color: white;
   -ms-transform: scale(1.2, 1.2); /* IE 9 */
   -webkit-transform: scale(1.2, 1.2); /* Safari */
   transform: scale(1.2, 1.2);
@@ -924,9 +963,7 @@ $divider: sqrt($cells);
   //max-width: 1400px;
 }
 
-.container-padding{
-  padding: 20px;
-}
+
 .container-small {
   width: 60%;
   margin: 0 auto;
@@ -961,10 +998,10 @@ $divider: sqrt($cells);
   flex-direction: row;
   justify-content: flex-start;
   padding: 10px;
-  background: $color-action;
+  background: $color-principal;
 }
 .container-comanda-body{
-  background-color: #505050;
+  background-color: #293333;
   color:#fff;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
@@ -997,15 +1034,11 @@ $divider: sqrt($cells);
 
 
 .boton-confirmar-comanda{
-  background-color: #88C057!important;
+  background-color: #689F38!important;
 }
 
-//.comanda-borde-status{
-  //border: 3px solid #88C057;
-//}
 
 .separador-acciones-comanda{
-  background-color: #505050;
   width: 44px;
   display: flex;
 }
@@ -1033,11 +1066,11 @@ $divider: sqrt($cells);
 
 .comanda-observaciones{
   display: flex;
-  background: lightgray;
-  color: black;
+  background: black;
+  color: white;
   font-weight: lighter;
   padding: 5px;
-  font-size: 18px;
+  font-size: 13px;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -1170,7 +1203,7 @@ input.buscador{
 
     border:4px solid #FFFFFF;
     overflow:hidden;
-    background-image: linear-gradient(to bottom, $color-action 50%, #FFFFFF 50%);
+    background-image: linear-gradient(to bottom, $color-principal 50%, #FFFFFF 50%);
     background-size: 100% 200%;
     transition: all 1s;
     color: #FFFFFF;
@@ -1281,33 +1314,34 @@ textarea {
       }
     }
     &.ico-info{
-      color: #447EAF!important;
+      color: rgba(255, 255, 255, .5)!important;
     }
     &.ico-warn{
-      color: #96722E!important;
+      color: rgba(255, 255, 255, .5)!important;
     }
     &.ico-success{
-      color: #597151!important;
+      color: rgba(255, 255, 255, .5)!important;
     }
     &.ico-error{
-      color: #597151!important;
+      color: rgba(255, 255, 255, .5)!important;
 
     }
   }
 }
 
-$info: #CDE8F6;
+$info:  #447EAF;
 $info-text: #447EAF;
-$warn: #F8F4D5;
+$warn: #96722E;
 $warn-text: #96722E;
 $error: #ECC8C5;
-$error-text: #B83C37;
-$success: #DDF3D5;
+$error-text: #F44336 ;
+$success: #CDDC39 ;
 $success-text: #597151;
 
 .mv-error-message, .mv-success-message, .mv-info-message, .mv-warning-message {
+  font-family: 'Ubuntu', sans-serif;
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
   //text-align: center;
   //font-weight: bold;
   line-height: 26px;
@@ -1323,34 +1357,29 @@ $success-text: #597151;
 }
 
 .mv-error-message {
-  background-color: $error;
-  border:  darken($error, 20%) 2px solid;
-  color: $error-text!important;
+  background-color: $error-text;
+  color: white!important;
 }
 
 .mv-success-message {
   background-color: $success;
-  border:  darken($success, 20%) 2px solid;
-  color: $success-text;
+  color: white;
 }
 
 .mv-info-message{
   background-color: $info;
-  border:  darken($info, 40%) 2px solid;
-  color: $info-text!important;
+  color: white!important;
 }
 
 .mv-warning-message{
   background-color: $warn;
-  border:  darken($warn, 20%) 2px solid;
-  color: $warn-text!important;
+  color: white!important;
 }
 
 .error-message {
   position: absolute;
   top: 16px !important;
   left: -1px !important;
-  background-color: #a90329;
   text-align: center;
   width: 400px;
   height: 200px;
@@ -1387,14 +1416,15 @@ button:focus { outline-style: none!important; }
 .header {
   font-family: 'Ubuntu', sans-serif;
   //font-weight: bolder;
-  color: white!important;;
+  color: black!important;;
   width: 100%;
   height: 56px;
-  background-color: #293333;
+  background-color: $color-secundario;
   position: fixed;
   //top: 50px;
   top: 100px;
   z-index: 1000;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   @media (min-width: 800px) {
     display: flex;
      }
@@ -1410,7 +1440,7 @@ button:focus { outline-style: none!important; }
 }
 
 .menu-icon:hover, .menu-icon2:hover{
-  -webkit-filter: drop-shadow(0px 0px 15px #eeffff);
+  -webkit-filter: drop-shadow(0px 0px 15px $color-focus);
   cursor: pointer;
 
 
@@ -1446,6 +1476,7 @@ button:focus { outline-style: none!important; }
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 
 .nav-button {
@@ -1825,22 +1856,25 @@ button:focus { outline-style: none!important; }
         color: #fff;
         text-decoration: none;
         margin: 0 15px;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+        padding-bottom: 20px;
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
       }
-      a:hover{
-       // padding: 20px 5px;
-        color: $color-action!important;
+      a:hover, a:active, a:focus{
+        color: white!important;
         cursor: pointer;
-        -webkit-filter: drop-shadow(0px 0px 15px #eeffff);
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+        padding-bottom: 20px;
+        border-bottom: 3px solid $color-principal;
+        -webkit-filter: drop-shadow(0px 0px 15px $color-focus);
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
       }
 
     }
@@ -1884,9 +1918,7 @@ button:focus { outline-style: none!important; }
         font-weight:bold;
         text-decoration: none;
         padding: 7px 8px;
-        -webkit-border-radius: 30px;
         position: relative;
-        border-right: 1px solid $color-principal;
         font-size: 12px;
         opacity: 0;
         -webkit-animation: fadeIn ease-in-out 2; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -1910,8 +1942,8 @@ button:focus { outline-style: none!important; }
       .menu-desktop-btn:focus,
       .menu-desktop-btn:active {
         cursor: pointer;
-        color: #EF037C;
         opacity: 1;
+        border-bottom: 3px solid $color-principal;
         -webkit-transition: opacity 2s ease;
         -moz-transition: opacity 2s ease;
         -ms-transition: opacity 2s ease;
@@ -1977,22 +2009,33 @@ button:focus { outline-style: none!important; }
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 
+
 }
 .form-open{
   opacity: 1;
   display: inline;
   width: 466px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+ background-color: $color-secundario;
+  -webkit-animation: FadeInLeft ease-in 1;
+  -moz-animation: FadeInLeft ease-in 1;
+  animation: FadeInLeft ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .3s;
+  -moz-animation-duration: .3s;
+  animation-duration: .3s;
+
+
+
+  label{
+    color: white!important;
+  }
 }
 
 
 .detalle-container{
   h3{
-    color: $color-action;
+    color: $color-principal;
     margin-bottom: 2px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -2032,7 +2075,7 @@ ol, ul {
   /* vertical-align: text-bottom; */
   display: flex;
   padding-top: 10px;
-  color: $color-action;
+  color: white;
 }
 
 .checkbox {
@@ -2391,22 +2434,30 @@ form.form{
   padding-left: 0;
   padding-right: 0;
   padding-top: calc(10%);
-  background-image: linear-gradient(-180deg, #EEEEEE 0%, #D8D8D8 100%);
+  background-color: $color-secundario;
+
+  span{
+    color: white;
+    margin-bottom: 10px;
+  }
 
 
 }
 
 abrir-cerrar-caja h3{
-  color: $color-principal;
-  font-size: 25px;
+  color: $color-complementario;
+  font-size: 19px;
   margin-bottom:20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .detalle-container-login{
   color: black;
   font-weight: bold;
   .input{
-    margin-top: 5px;
+    margin-top: 20px;
+
   }
 }
 
@@ -2538,8 +2589,9 @@ abrir-cerrar-caja h3{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   height: 48px;
+   height: 28px;
    align-items: center;
+  padding: 3px;
  }
 .paginacion-go-to {
   width: 250px;
@@ -2697,9 +2749,7 @@ hr.primary-line {
 .mesas-margin{
   margin: 5px;
 }
-.input-small-2{
-  width: 130px !important;
-}
+
 
 .back-pedidos{
   color: black;
@@ -2714,7 +2764,7 @@ hr.primary-line {
 .comanda-selected {
   //border: 5px solid #3b50ce;
   .container-comanda-header{
-   background-color: #eeffff;
+   background-color: $color-focus;
    color: black;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -2754,11 +2804,35 @@ background-color: white;
   align-items: center;
 }
 
-#abrirCerraCajaForm, #gastosForm, #mv-depositos{
+#abrirCerraCajaForm, #gastosForm, #mv-depositos, .DepositosForm, .TrasladarStockForm, #campaniaForm{
   width: 236px!important;
   margin: auto;
+
 }
 
+
+.GastosForm{
+  width: 100%!important;
+  text-align: center;
+}
+
+#cobrosForm, #abrirCerraCajaForm, #gastosForm, .DepositosForm, .TrasladarStockForm, #campaniaForm{
+  -webkit-animation: FadeInTop2 ease-in 1;
+  -moz-animation: FadeInTop2 ease-in 1;
+  animation: FadeInTop2 ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: white!important;
+  background-image: none;
+  color: rgb(0, 0, 0);
+}
 
 .mv-col-2{
   width: 16.66666667%;
