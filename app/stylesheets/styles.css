@@ -3090,23 +3090,27 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* line 2894, ../sass/styles.scss */
-mv-plato-mas-vendido, .container-form {
+mv-plato-mas-vendido, .container-form, mv-estadisticas, mv-promedio-ventas, mv-consulta-stock {
   padding: 0;
 }
 /* line 2897, ../sass/styles.scss */
-mv-plato-mas-vendido form, .container-form form {
+mv-plato-mas-vendido form, .container-form form, mv-estadisticas form, mv-promedio-ventas form, mv-consulta-stock form {
   background-color: transparent !important;
   text-align: left;
   box-shadow: none;
   padding: 0;
 }
+/* line 2905, ../sass/styles.scss */
+mv-plato-mas-vendido .form-container-wrapper, .container-form .form-container-wrapper, mv-estadisticas .form-container-wrapper, mv-promedio-ventas .form-container-wrapper, mv-consulta-stock .form-container-wrapper {
+  width: 100%;
+}
 
-/* line 2907, ../sass/styles.scss */
+/* line 2913, ../sass/styles.scss */
 mv-historico-caja-diaria {
   color: black;
 }
 
-/* line 2911, ../sass/styles.scss */
+/* line 2917, ../sass/styles.scss */
 .container-gastos {
   display: flex;
   margin: 10px;
@@ -3118,7 +3122,7 @@ mv-historico-caja-diaria {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 2922, ../sass/styles.scss */
+/* line 2928, ../sass/styles.scss */
 .container-gastos2 {
   display: flex;
   flex-direction: row;

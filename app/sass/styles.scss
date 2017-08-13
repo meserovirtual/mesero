@@ -2891,7 +2891,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-weight: bolder;
 }
 
-mv-plato-mas-vendido, .container-form{
+mv-plato-mas-vendido, .container-form, mv-estadisticas, mv-promedio-ventas, mv-consulta-stock{
   padding: 0;
 
   form{
@@ -2901,6 +2901,12 @@ mv-plato-mas-vendido, .container-form{
     padding: 0;
 
   }
+
+  .form-container-wrapper{
+    width: 100%;
+
+  }
+
 }
 
 
@@ -2932,3 +2938,4 @@ color: black;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
+
