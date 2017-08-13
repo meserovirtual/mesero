@@ -146,7 +146,7 @@
             }
         });
 
-        $routeProvider.when('/caja/campania', {
+        $routeProvider.when('/settings/campania', {
             templateUrl: 'campania/campania.html',
             controller: 'CampaniaCtrl',
             data: {requiresLogin: true},

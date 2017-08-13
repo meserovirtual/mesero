@@ -278,8 +278,6 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'depositos'}">Depositos</a>
                 <a href="#!/caja/detalle_caja" ng-click="appCtrl.sub_menu = 'detalle_caja'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'detalle_caja'}">Detalle de Caja</a>
-                <a href="#!/caja/campania" ng-click="appCtrl.sub_menu = 'campania'" ng-if="appCtrl.rol < 1"
-                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'campania'}">Campaña Mail</a>
             </div>
             <div ng-if="appCtrl.menu =='reportes'" class="sub-menu"  ng-if="appCtrl.rol < 1">
                 <a href="#!/reportes/plato_mas_vendido" ng-click="appCtrl.sub_menu = 'plato_mas_vendido'" ng-if="appCtrl.rol < 1"
@@ -314,6 +312,8 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
                 <a href="#!/settings/avisos" ng-click="appCtrl.sub_menu = 'avisos'" ng-if="appCtrl.rol < 1"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'avisos'}">Avisos</a>
+                <a href="#!/settings/campania" ng-click="appCtrl.sub_menu = 'campania'" ng-if="appCtrl.rol < 1"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'campania'}">Campaña Mail</a>
             </div>
             <div ng-if="appCtrl.menu =='carrito'" class="sub-menu" ng-if="appCtrl.rol < 7">
                 <a href="#!/carrito/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'" ng-if="appCtrl.rol < 1"
