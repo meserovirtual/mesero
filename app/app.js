@@ -387,7 +387,7 @@
             }
         });
 
-        $routeProvider.when('/carrito/pedidosweb', {
+        $routeProvider.when('/pago/pedidosweb', {
             templateUrl: 'pedidos_web/pedidosweb.html',
             controller: 'PedidosWebCtrl',
             data: {requiresLogin: true},
