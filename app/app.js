@@ -133,17 +133,6 @@
             }
         });
 
-        $routeProvider.when('/caja/movimientos', {
-            templateUrl: 'movimientos/movimientos.html',
-            controller: 'MovimientoCtrl',
-            data: {requiresLogin: true},
-            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
-                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-                    // you can lazy load files for an existing module
-                    return $ocLazyLoad.load('movimientos/movimientos.js');
-                }]
-            }
-        });
 
         $routeProvider.when('/caja/detalle_caja', {
             templateUrl: 'detalle_caja/detalle_caja.html',
@@ -350,7 +339,19 @@
             }
         });
 
-        $routeProvider.when('/reportes/pedidos', {
+        $routeProvider.when('/reportes/consultastock', {
+            templateUrl: 'consulta_stock/consulta_stock.html',
+            controller: 'ConsultaStockCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('consulta_stock/consulta_stock.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/carrito/pedidos', {
             templateUrl: 'pedidos/pedidos.html',
             controller: 'PedidosCtrl',
             data: {requiresLogin: true},
@@ -362,7 +363,7 @@
             }
         });
 
-        $routeProvider.when('/reportes/confirmar', {
+        $routeProvider.when('/carrito/confirmar', {
             templateUrl: 'confirmar/confirmar.html',
             controller: 'ConfirmarCtrl',
             data: {requiresLogin: true},
@@ -374,14 +375,14 @@
             }
         });
 
-        $routeProvider.when('/reportes/consultastock', {
-            templateUrl: 'consulta_stock/consulta_stock.html',
-            controller: 'ConsultaStockCtrl',
+        $routeProvider.when('/carrito/movimientos', {
+            templateUrl: 'movimientos/movimientos.html',
+            controller: 'MovimientoCtrl',
             data: {requiresLogin: true},
             resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
-                    return $ocLazyLoad.load('consulta_stock/consulta_stock.js');
+                    return $ocLazyLoad.load('movimientos/movimientos.js');
                 }]
             }
         });
