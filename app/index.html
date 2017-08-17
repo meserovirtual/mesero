@@ -159,6 +159,7 @@
                         'bower_components/mv-angular-mesas/mv-salon-administracion.js',
                         'bower_components/mv-angular-reportes/mv-estadisticas.js',
                         'bower_components/mv-angular-reportes/mv-promedio-ventas.js',
+                        'bower_components/mv-angular-usuarios/mv-reservas.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                     ], 'segundo');
@@ -251,7 +252,7 @@
                        ng-click="appCtrl.menu = 'settings'">
                         <img src="images/logo5.svg" class="menu-icon">
                     </a>
-                    <a class="menu-desktop-btn ac-ripple" href="#!/pago/pedidosweb" title="Pago" ng-if="appCtrl.rol < 1"
+                    <a class="menu-desktop-btn ac-ripple" href="#!/pago/reservas" title="Pago" ng-if="appCtrl.rol < 1"
                        ng-click="appCtrl.menu = 'pago'">
                         <img src="images/logo6.svg" class="menu-icon">
                     </a>
@@ -324,6 +325,8 @@
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'movimientos'}">Movimientos Mercaderia</a>
             </div>
             <div ng-if="appCtrl.menu =='pago'" class="sub-menu" ng-if="appCtrl.rol < 7">
+                <a href="#!/pago/reservas" ng-click="appCtrl.sub_menu = 'reservas'" ng-if="appCtrl.rol < 7"
+                   ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'reservas'}">Reservas</a>
                 <a href="#!/pago/pedidosweb" ng-click="appCtrl.sub_menu = 'pedidosweb'" ng-if="appCtrl.rol < 7"
                    ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'pedidosweb'}">Pedidos Web</a>
             </div>

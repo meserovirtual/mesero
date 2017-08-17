@@ -52,6 +52,7 @@
         'mvSalonAdministracion',
         'mvEstadisticas',
         'mvPromedioVentas',
+        'mvReservas',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -395,6 +396,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('pedidos_web/pedidosweb.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/pago/reservas', {
+            templateUrl: 'reservas/reservas.html',
+            controller: 'ReservasCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('reservas/reservas.js');
                 }]
             }
         });
