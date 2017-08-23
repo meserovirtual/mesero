@@ -824,7 +824,7 @@ h3{
 
 $cells: 64;
 $divider: sqrt($cells);
-.boton-agregar, .boton-cancelar, .boton-ok, .boton-eliminar, .boton-calendario {
+.boton-agregar, .boton-cancelar, .boton-ok, .boton-eliminar, .boton-calendario, .boton-buscar {
   position: relative;
   height: 37px;
   width: 37px;
@@ -869,6 +869,21 @@ $divider: sqrt($cells);
 }
 }
 
+.boton-buscar{
+  background-color: white!important;
+  color: black!important;
+  .fa-search:before{
+    color: black;
+  }
+}
+
+.boton-buscar:hover{
+  cursor: pointer;
+  background-color: $color-principal!important;
+     .fa-search:before{
+       color: white;
+     }
+}
 
 
 
@@ -1346,7 +1361,7 @@ $success-text: #597151;
   font-size: 16px;
   //text-align: center;
   //font-weight: bold;
-  line-height: 26px;
+  line-height: 22px;
   z-index: 1500;
   //width: 300px;
   //height: 60px;
@@ -2209,6 +2224,11 @@ ol, ul {
   }
 }
 
+button{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 @keyframes slideUp {
   0% {
     -webkit-transform: translateY(rem($slideDistance));
@@ -2328,6 +2348,14 @@ ul.enlarge img, ul.enlarge span{
   flex-direction: row;
   align-items: center;
 }
+
+.form-flex-between-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .form-flex-around{
   justify-content: space-around;
   margin-bottom: 10px;
@@ -2891,7 +2919,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-weight: bolder;
 }
 
-mv-plato-mas-vendido, .container-form, mv-estadisticas, mv-promedio-ventas, mv-consulta-stock{
+mv-plato-mas-vendido, .container-form, mv-estadisticas, mv-promedio-ventas, mv-consulta-stock, mv-reservas{
   padding: 0;
 
   form{
