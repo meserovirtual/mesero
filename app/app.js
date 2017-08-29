@@ -53,6 +53,7 @@
         'mvEstadisticas',
         'mvPromedioVentas',
         'mvReservas',
+        'mvFactura',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
