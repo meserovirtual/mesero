@@ -116,6 +116,47 @@ function validateRol($requerido)
 
 }
 
+
+/**
+ * @description Valida que el rol del usuario sea el correcto
+ * @param $requerido
+ */
+function getEmpresa()
+{
+
+    global $jwt_enabled;
+    if ($jwt_enabled == false) {
+        return 1;
+    }
+
+    $requestHeaders = apache_request_headers();
+
+    $authorizationHeader = isset($requestHeaders['Authorization']) ? $requestHeaders['Authorization'] : null;
+
+//    echo print_r(apache_request_headers());
+
+
+    if ($authorizationHeader == null) {
+        header('HTTP/1.0 401 Unauthorized');
+        echo "No authorization header sent";
+        exit();
+    }
+
+    // // validate the token
+    $pre_token = str_replace('Bearer ', '', $authorizationHeader);
+    $token = str_replace('"', '', $pre_token);
+    global $secret;
+    global $decoded_token;
+    $decoded_token = JWT::decode($token, $secret, true);
+
+    $empresa = $decoded_token->data->empresa ;
+
+    return (($empresa != null)? $empresa : 1);
+
+
+}
+
+
 function generatePushId()
 {
     // Modeled after base64 web-safe chars, but ordered by ASCII.
