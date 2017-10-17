@@ -54,6 +54,7 @@
         'mvPromedioVentas',
         'mvReservas',
         'mvFactura',
+        'mvTablasProduccion',
         'LangTables',
         'acHelper',
     ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -289,6 +290,18 @@
                 loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load('login/login.js');
+                }]
+            }
+        });
+
+        $routeProvider.when('/reportes/tablas_produccion', {
+            templateUrl: 'tablas_produccion/tablas_produccion.html',
+            controller: 'TablasProduccionCtrl',
+            data: {requiresLogin: true},
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load('tablas_produccion/tablas_produccion.js');
                 }]
             }
         });
